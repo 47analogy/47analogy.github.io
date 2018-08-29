@@ -2,7 +2,6 @@
 module.exports = {
   siteMetadata: {
     title: 'Tweed Portfolio',
-    pathPrefix: "/47analogy.github.io",
   },
   plugins: [
     `gatsby-plugin-react-helmet`, // modifies head tags
