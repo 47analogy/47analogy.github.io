@@ -1,8 +1,8 @@
 {
-  "name": "gatsby-starter-default",
-  "description": "Gatsby default starter",
+  "name": "tweed-portfolio",
+  "description": "Portfolio Website",
   "version": "1.0.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "author": "Anthony Tweed",
   "dependencies": {
     "gatsby": "^1.9.277",
     "gatsby-link": "^1.6.46",
@@ -10,7 +10,10 @@
     "gatsby-plugin-react-helmet": "^2.0.11",
     "gatsby-plugin-typography": "^1.7.19",
     "gatsby-source-filesystem": "^1.5.39",
-    "react-helmet": "^5.2.0"
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-helmet": "^5.2.0",
+    "reactstrap": "^6.4.0"
   },
   "keywords": [
     "gatsby"
@@ -28,9 +31,5 @@
     "gatsby-plugin-sass": "^1.0.26",
     "gh-pages": "^1.2.0",
     "prettier": "^1.13.7"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
   }
 }
