@@ -1,6 +1,7 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+import myImg from '../assets/ruff.png'
 
 class IndexPage extends React.Component {
 
@@ -35,7 +36,7 @@ class IndexPage extends React.Component {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 centered">
-                <h1>Welcome to my site<br />My name is Anthony Tweed <br /> I'm a Software Engineer for all your needs...</h1>
+                <h1>Welcome<br />I'm Anthony Tweed <br /> A Software Engineer <br />for all your needs...</h1>
                 <div className="mtb">
                 </div>
               </div>
@@ -45,7 +46,7 @@ class IndexPage extends React.Component {
 
           {/* start About*/}
         </div>
-        <div className="container ptb">
+        {/* <div className="container ptb">
           <div className="row">
             <h1>ABOUT</h1>
             <div className="col-md-6">
@@ -53,7 +54,24 @@ class IndexPage extends React.Component {
               <p className="mt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequa</p>
             </div>
           </div>
+        </div> */}
+
+        <div className="container ptb">
+          {/* <div className="row">
+            <div className="col-md-6"> */}
+          <div>
+            <h1>About Me</h1>
+            <h2>THIS IS WHY YOU SHOULD HIRE ME</h2>
+            <p className="mt">Lorem ipsum dolor sit amet, consectetur adipiscing elit, <br /> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div>
+            <img src={myImg} className="img-responsive mt" alt="" />
+          </div>
+
+
+          {/* <img src={myImg} className="img-responsive mt" alt="" /> */}
         </div>
+
         {/* end About */}
 
 
@@ -96,54 +114,35 @@ class IndexPage extends React.Component {
               <hr />
             </div>
             <div className="portfolio-wrapper">
-              <div id="owl-demo" className="owl-carousel">
 
-                <div className="item">
-                  <a data-rel="prettyPhoto" href="img/portfolio_01.jpg">
-                    <img className="lazyOwl" src="img/portfolio_01.jpg" data-src="img/portfolio_01.jpg" alt="" />
-                    <div>
-                      {/* <small>Description</small> */}
-                      <span>Project Name 1 Here</span>
-                      <i className="fa fa-search"></i>
-                    </div>
-                  </a>
+              <div className="item">
+                <div>
+                  <div className="project1">Project Name 1 Here</div>
+                  <img className="project-1-img" src="img/portfolio_01.jpg" data-src="img/portfolio_01.jpg" alt="" />
+                  <small>Description</small>
+                  <i className="fa fa-search"></i>
                 </div>
-
-                <div className="item">
-                  <a data-rel="prettyPhoto" href="img/portfolio_02.jpg">
-                    <img className="lazyOwl" src="img/portfolio_02.jpg" data-src="img/portfolio_02.jpg" alt="" />
-                    <div>
-                      {/* <small>Description</small> */}
-                      <span>Project Name 2 Here</span>
-                      <i className="fa fa-search"></i>
-                    </div>
-                  </a>
-                </div>
-
-                <div className="item">
-                  <a data-rel="prettyPhoto" href="img/portfolio_06.jpg">
-                    <img className="lazyOwl" src="img/portfolio_06.jpg" data-src="img/portfolio_06.jpg" alt="" />
-                    <div>
-                      {/* <small>Description</small> */}
-                      <span>Project Name 3 Here</span>
-                      <i className="fa fa-search"></i>
-                    </div>
-                  </a>
-                </div>
-
               </div>
 
+              <div className="item">
+                <div>
+                  <div className="project2">Project Name 2 Here</div>
+                  <img className="project-2-img" src="img/portfolio_02.jpg" data-src="img/portfolio_02.jpg" alt="" />
+                  <small>Description</small>
+                  <i className="fa fa-search"></i>
+                </div>
+              </div>
             </div>
-            <div>
+            {/* <div>
               <a className="button large" href="home3.html#">VIEW ALL PROJECTS</a>
-            </div>
+            </div> */}
           </section>
         </div>
         <div>
           {/* end portfolio */}
         </div>
 
-      </div>
+      </div >
 
     )
   }

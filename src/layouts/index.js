@@ -31,7 +31,8 @@ const Layout = ({ children }) => (
       <div className="footer">
         <div className="container">
           <div className="row centered">
-            <h2>You Can Contact Me</h2>
+            <h2>Contact Me</h2>
+            <h3>Form Goes Here</h3>
             <h5>ACTWEED47@GMAIL.COM</h5>
 
             {/* <p className="mt">
@@ -39,7 +40,7 @@ const Layout = ({ children }) => (
               <a href="#"><i className="ion-social-instagram"></i></a>
               <a href="#"><i className="ion-social-facebook"></i></a>
             </p> */}
-            <h6 className="mt">COPYRIGHT 2018 - Anthony Tweed</h6>
+            <h6 className="mt">COPYRIGHT 2018 - CODETHINKER</h6>
           </div>
         </div>
       </div>
