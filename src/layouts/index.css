@@ -42,7 +42,7 @@ body {
 	clear: both;
 }
 .centered {text-align: center}
-.mt {margin-top: 50px;}
+/* .mt {margin-top: 50px;} */
 .mb {margin-bottom: 50px;}
 .mtb {margin-top: 50px; margin-bottom: 50px;}
 .mtb2 { margin-top: 100px; margin-bottom: 100px;}
@@ -156,7 +156,8 @@ input {
 
 /* HEADER SECTION */
 .header {
-	background: url(../assets//header.jpg) no-repeat center top;
+	/* FIND A BACKGROUND IMAGE */
+	/* background: url(../assets//header.jpg) no-repeat center top; */ 
 	padding-top: 180px;
 	text-align: center;
 	background-attachment: relative;
@@ -217,7 +218,7 @@ input {
 .about {	
 	display: flex;
 	justify-content: space-end;
-	background: #ce1d1d;
+	background: #df8c8c;
 	padding-top: 80px; padding-bottom: 80px;
 	/* width: 100%; */
 
@@ -264,6 +265,7 @@ p {
 /* BLOG */
 .blogs {
 	/* background: url(../assets//dummy.jpg) no-repeat center top; */
+
 	background: rgb(0, 9, 88);
 	padding-top: 90px;
 	text-align:center;
@@ -341,7 +343,17 @@ p {
 	color: #03C9A9;
 }
 
+.message h1 {
+	width:800px;
+	margin:0 auto;
+	margin: 47px 0;
+}
 
+.img-ruff{
+	 margin-top: 47px;
+	 width:800px;
+	 margin:0 auto;
+}
 
 @media (max-width: 880px) {
   .container {

@@ -34,7 +34,7 @@ const Layout = ({ children }) => (
         <div className="container">
           <div className="row centered">
             <h2>Contact Me</h2>
-            <h3>Form Goes Here</h3>
+            {/* <h3>Form Goes Here</h3> */}
             <h5>ACTWEED47@GMAIL.COM</h5>
 
             {/* <p className="mt">
