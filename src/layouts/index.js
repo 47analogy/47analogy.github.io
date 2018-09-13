@@ -2,9 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import Link from 'gatsby-link'
-// import Header from '../components/header'
+import Header from '../components/header'
 import './index.css'
 // import './../scss/index.scss'
+import label from './index.css'
+import input from './index.css'
+import buttonSubmit from './index.css'
 
 const Layout = ({ children }) => (
   <div>
@@ -35,6 +38,64 @@ const Layout = ({ children }) => (
           <div className="row centered">
             <h2>Contact Me</h2>
             {/* <h3>Form Goes Here</h3> */}
+            <form
+              action="//formspree.io/atweed47@yahoo.com"
+              method="POST"
+            >
+              <label className={label} htmlFor="name">
+                <input
+                  className={input}
+                  type="text"
+                  placeholder="your name"
+                  name="name"
+                />
+              </label>
+
+              <label className={label} htmlFor="_replyto">
+                <input
+                  className={input}
+                  type="email"
+                  placeholder="your email"
+                  name="_replyto"
+                />
+              </label>
+
+              <label className="message" htmlFor="message">
+                <textarea
+                  className={input}
+                  name="message"
+                  rows="3"
+                  placeholder="Message"
+                />
+              </label>
+
+              {/* <label>
+                <buttonSubmit
+                  type="submit"
+                  value="send"
+                />
+              </label> */}
+
+              {/* <buttonSubmit type="submit">Send</buttonSubmit> */}
+
+              {/* <button className={button} type="submit" value="Send"
+             /> */}
+
+              <button >
+                <input className="buttonSubmit" type="submit" value="Send" />
+              </button>
+
+
+              <input
+                type="hidden"
+                name="_subject"
+                value="Message via http://anthonytweed.com"
+              />
+
+            </form>
+
+
+
             <h5>ACTWEED47@GMAIL.COM</h5>
 
             {/* <p className="mt">

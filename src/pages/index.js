@@ -55,12 +55,12 @@ class IndexPage extends React.Component {
             <div className="left-col">
               <h2>About Me</h2>
               {/* <h2>THIS IS WHY YOU SHOULD HIRE ME</h2> */}
-              <p className="mt">Hey, I'm Anthony Tweed, a software engineer in Atlanta. I'm a thinker and a problem solver. I think of the computer as my lab where I run experiments and find solutions.</p>
+              <p className="mt">Hey, I'm Anthony Tweed, a software engineer in Atlanta. I'm a thinker and a problem solver. I see the computer as my lab where I run experiments and find solutions.</p>
               <p className="mt">When I'm not on my laptop, I enjoy spending time outdoors in nature...the activity doesn't matter, as long as it varies.</p>
               <p className="mt">My goal in the software game to create products and content that help consumers get what they need, when they want it, and make their lives more enjoyable in the process. </p>
               <p className="mt">I have experience with all stages of the fullstack software development process, including frameworks, servers, databases, testing, and deployment. I am a software engineer for all your needs.</p>
+              <div>Tech Stack:</div>
               <p className="store">
-                <div>Tech Stack:</div>
                 <a href="#"><img src={jsImg} height="50" alt="" /></a>
                 <a href="#"><img src={htmlImg} height="50" alt="" /></a>
                 <a href="#"><img src={cssImg} height="50" alt="" /></a>
