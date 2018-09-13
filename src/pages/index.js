@@ -6,6 +6,8 @@ import jsImg from '../assets/js-icon.svg'
 import htmlImg from '../assets/html5-icon.svg'
 import reactImg from '../assets/react-icon.svg'
 import cssImg from '../assets/css-icon.svg'
+import nodeImg from '../assets/node-icon.svg'
+import mongoImg from '../assets/mongo-icon.svg'
 
 class IndexPage extends React.Component {
 
@@ -65,10 +67,11 @@ class IndexPage extends React.Component {
                 <a href="#"><img src={htmlImg} height="50" alt="" /></a>
                 <a href="#"><img src={cssImg} height="50" alt="" /></a>
                 <a href="#"><img src={reactImg} height="50" alt="" /></a>
+                <a href="#"><img src={nodeImg} height="50" alt="" /></a>
+                <a href="#"><img src={mongoImg} height="50" alt="" /></a>
                 <a href="#"><img src={myImg} height="50" alt="" /></a>
                 <a href="#"><img src={myImg} height="50" alt="" /></a>
-                <a href="#"><img src={myImg} height="50" alt="" /></a>
-                <a href="#"><img src={myImg} height="50" alt="" /></a>
+
               </p>
             </div>
             <div className="right-col">
@@ -83,37 +86,37 @@ class IndexPage extends React.Component {
         {/* project start */}
 
         <section id="projects-section">
+          <div>A few projects I have been involved with:</div>
           <div className="projects">
-            <div>A few projects I have been involved with:</div>
-            <div className='pf-img'>
-              <img src={myImg} alt='img' />
-              <div className='center caption'>
+            <div className='project-container'>
+              <img id="pj-img1" src={myImg} alt='img' />
+              <div className='center-caption'>
                 <br />
                 <div className='projectsHead'>Hairspray</div>
-                <div>Hair salon app that allows a user to schedule and provide feedback on services.</div>
-                <div>Team project built with React, Redux, Express, MongoDB, Node, Twilio and Stripe</div>
+                <p>Hair salon app that allows a user to schedule and provide feedback on services.</p>
+                <p>Team project built with React, Redux, Express, MongoDB, Node, Twilio and Stripe</p>
                 <p>Link to Code</p>
               </div>
             </div>
 
-            <div className='pf-img'>
-              <img src={myImg} alt='img' />
-              <div className='center caption'>
+            <div className='project-container'>
+              <img id="pj-img2" src={myImg} alt='img' />
+              <div className='center-caption'>
                 <br />
                 <div className='projectsHead'>Book Vote</div>
-                <div>Book voting app that allows a user to search for and review books.</div>
-                <div>Hackathon project built using React, Express, MongoDB, and Node</div>
+                <p>Book voting app that allows a user to search for and review books.</p>
+                <p>Hackathon project built using React, Express, MongoDB, and Node</p>
                 <p>Link to Code</p>
               </div>
             </div>
 
-            <div className='pf-img'>
-              <img src={myImg} alt='img' />
-              <div className='center caption'>
+            <div className='project-container'>
+              <img id="pj-img3" src={myImg} alt='img' />
+              <div className='center-caption'>
                 <br />
                 <div className='projectsHead'>Coming Soon</div>
-                <div>Lorem ipsum dolor sit amet, at eam sint quot facer, labore nemore percipit in cum.</div>
-                <div>Lorem ipsum dolor sit amet, at eam sint quot facer, labore.</div>
+                <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore nemore percipit in cum.</p>
+                <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore.</p>
                 <p>Link to Code</p>
               </div>
             </div>
