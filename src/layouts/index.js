@@ -36,50 +36,40 @@ const Layout = ({ children }) => (
       <div className="footer">
         <div className="container">
           <div className="row centered">
-            <h2>Contact Me</h2>
+            <h3>Contact Me</h3>
             {/* <h3>Form Goes Here</h3> */}
             <form
               action="//formspree.io/atweed47@yahoo.com"
               method="POST"
             >
-              <label className={label} htmlFor="name">
-                <input
-                  className={input}
-                  type="text"
-                  placeholder="your name"
-                  name="name"
-                />
-              </label>
+              <label className={label} htmlFor="name">Name</label>
+              <input
+                className={input}
+                type="text"
+                placeholder="Your name..."
+                name="name"
+              />
 
-              <label className={label} htmlFor="_replyto">
-                <input
-                  className={input}
-                  type="email"
-                  placeholder="your email"
-                  name="_replyto"
-                />
-              </label>
 
-              <label className="message" htmlFor="message">
-                <textarea
-                  className={input}
-                  name="message"
-                  rows="3"
-                  placeholder="Message"
-                />
-              </label>
+              <label className={label} htmlFor="_replyto">Email</label>
+              <input
+                className={input}
+                type="email"
+                placeholder="Your email..."
+                name="_replyto"
+              />
 
-              {/* <label>
-                <buttonSubmit
-                  type="submit"
-                  value="send"
-                />
-              </label> */}
 
-              {/* <buttonSubmit type="submit">Send</buttonSubmit> */}
+              <label className="message" htmlFor="message">Message</label>
+              <textarea
+                className={input}
+                name="message"
+                rows="3"
+                placeholder="Message..."
+              />
 
-              {/* <button className={button} type="submit" value="Send"
-             /> */}
+
+
 
               <button >
                 <input className="buttonSubmit" type="submit" value="Send" />
