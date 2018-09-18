@@ -788,7 +788,8 @@ box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(141, 59, 59, 0.12);
 border-top: 10px solid #828282;
 min-height: 250px;
 padding: 10px;
-margin: 10px;
+margin: 100px 0;
+margin-right: 3%;
 }
 
 .card img {
@@ -847,8 +848,10 @@ h1 {
 form {
 	display: flex;
 	justify-content: column;
+
 }
 input textarea {
+	
 	font-size: 16px;
 	min-height: 40px;
 	border-radius: 10px;
@@ -896,7 +899,8 @@ input[type=submit]:hover {
 }
 
 /* background color and some padding around the form */
-.container {
+.footer .container {
+	width: 74%;
 	border-radius: 5px;
 	background-color: #f2f2f2;
 }
