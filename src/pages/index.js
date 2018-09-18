@@ -62,7 +62,7 @@ class IndexPage extends React.Component {
             <p className="mt">My goal in the software game to create products and content that help consumers get what they need, when they want it, and make their lives more enjoyable in the process. </p>
             <p className="mt">I have experience with all stages of the fullstack software development process, including frameworks, servers, databases, testing, and deployment. I am a software engineer for all your needs.</p>
             <div>Tech Stack:</div>
-            <p className="store">
+            <p className="tech-icons">
               <a href="#"><img src={jsImg} height="50" alt="" /></a>
               <a href="#"><img src={htmlImg} height="50" alt="" /></a>
               <a href="#"><img src={cssImg} height="50" alt="" /></a>
@@ -85,49 +85,37 @@ class IndexPage extends React.Component {
 
         {/* project start */}
 
-        <section id="projects-section">
-          <div>A few projects I have been involved with:</div>
-          <div className="projects">
-            <div className='project-container'>
+        <section id="project-section">
+          <div className="project">
+            <div class="card">
               <img id="pj-img1" src={myImg} alt='img' />
-              <div className='center-caption'>
-                <br />
-                <div className='projectsHead'>Hairspray</div>
-                <p>Hair salon app that allows a user to schedule and provide feedback on services.</p>
-                <p>Team project built with React, Redux, Express, MongoDB, Node, Twilio and Stripe</p>
-                <p>Link to Code</p>
-              </div>
+              <h1>Hairspray</h1>
+              <p>Hair salon app that allows a user to schedule and provide feedback on services.</p>
+              <p>Team project built with React, Redux, Express, MongoDB, Node, Twilio and Stripe</p>
+              <p>Link to Code</p>
+            </div>
+            <div class="card">
+              <img id="pj-img1" src={myImg} alt='img' />
+              <h1>Book Vote</h1>
+              <p>Book voting app that allows a user to search for and review books.</p>
+              <p>Hackathon project built using React, Express, MongoDB, and Node</p>
+              <p>Link to Code</p>
+            </div>
+            <div class="card">
+              <img id="pj-img1" src={myImg} alt='img' />
+              <h1>Coming Soon</h1>
+              <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore nemore percipit in cum.</p>
+              <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore Lorem ipsum dolor.</p>
+              <p>Link to Code</p>
             </div>
 
-            <div className='project-container'>
-              <img id="pj-img2" src={myImg} alt='img' />
-              <div className='center-caption'>
-                <br />
-                <div className='projectsHead'>Book Vote</div>
-                <p>Book voting app that allows a user to search for and review books.</p>
-                <p>Hackathon project built using React, Express, MongoDB, and Node</p>
-                <p>Link to Code</p>
-              </div>
-            </div>
-
-            <div className='project-container'>
-              <img id="pj-img3" src={myImg} alt='img' />
-              <div className='center-caption'>
-                <br />
-                <div className='projectsHead'>Coming Soon</div>
-                <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore nemore percipit in cum.</p>
-                <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore.</p>
-                <p>Link to Code</p>
-              </div>
-            </div>
           </div>
         </section>
-        {/* project end */}
+
 
         {/* start blog posts */}
         <section id="blog-section">
           <div className="blogs">
-
             <h1>Blog</h1>
             <div id="blog-post-1">
               <p><Link to="/page-2/">Implementing KISS</Link></p>

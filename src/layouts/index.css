@@ -640,44 +640,13 @@ input {
 	margin-right: 2px;
 } */
 
-/* @media screen and (max-width: 767px) {
-	.subscribe-input {
-		width: 100%;
-	}
-}
-.subscribe-submit {
-	right: 0;
-}
-.btn-download {
-	background: #FDE3A7;
-} */
 
-/*Buttons Configuration */
-/* .btn-conf {
-	border-radius: 50px;
-	margin-right: 15px;
-	font-size: 11px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	padding: 18px 28px 17px 28px;
-	}
-.btn-conf-2 {
-	border-radius: 50px;
-	margin-right: 15px;
-	font-size: 11px;
-	letter-spacing: 1px;
-	text-transform: uppercase;
-	padding: 12px 28px 11px 28px;
-	margin-top: 20px;
-	}
-.btn-green {
-	background: #03C9A9;
-	color: white
-} */
 
-body {
+
+
+/* body {
 	background: #828282;
-}
+} */
 
 
 /* HEADER SECTION */
@@ -752,18 +721,21 @@ body {
 }
 
 
-.store {
+.tech-icons {
 	/* background: green; */
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.store img {
-	margin-right: 10px;
-	margin-top: 20px;
-}
 
 p {
+  margin: 20px;
+  font-family: Verdana,sans-serif;
+  line-height: 1.4em;
+	font-size: 12px;
+}
+
+/* p {
 	padding: 0;
 	margin-bottom: 12px;
 	font-family: 'Lato', sans-serif;
@@ -773,7 +745,7 @@ p {
 	letter-spacing: 1px;
 	color: black;
 	margin-top: 10px;
-}
+} */
 
 .left-col {
 	/* width: 50%; */
@@ -819,65 +791,43 @@ p {
 	margin-top: 30px;
 }
 
+
+/* Projects */
+
 #projects-section {
 	background: yellow; 
 }
 
-.projects {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-around;
-	/* justify-content: space-around; */
-	/* background: #03C9A9; */
-	margin-top: 47px;
-	/* border: 5px solid blue; */
-}
-.project-container {
-border: 2px solid #03C9A9;
-/* display: flex;
-justify-content: center;
-align-items: center; */
+.project {
+  font-family: calibri;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+ flex-wrap: wrap;
 }
 
-#pj-img1 {
-	border: 5px solid purple;
-	/* display: flex;
-	justify-content: center; */
+.card {
+width: 350px;
+border: 1px solid gray;
+box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(141, 59, 59, 0.12);
+border-top: 10px solid #828282;
+min-height: 250px;
+padding: 10px;
+margin: 10px;
 }
 
-#pj-img2 {
-	border: 5px solid purple;
+.card img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 75%;
+	height: 200px;
+	box-shadow: 1px 1px 3px #888;
 }
 
-#pj-img3 {
-	border: 5px solid purple;
-}
-
-
-
-.pj-img {
-	border: 3px solid orange;
-}
-
-
-.center-caption {
-	border: 2px solid red;
-}
-
-.portfolio {
-	width: 70%;
-	text-align: center;
-	top:2%;
-	border: 4px solid #03C9A9;
-}
-
-.portfolioHead {
-	font-size: 2.4em;
-	color: lavender;
-}
-
-.projectsHead {
-	font-size: 1.5em;
+h1 {
+  font-weight: lighter;
+  
 }
 
 
@@ -887,7 +837,7 @@ align-items: center; */
 	justify-content: center;
 	padding-top: 60px;
 	padding-bottom: 60px;
-	background:black;
+	background: #828282;
 	color: black;
 }
 
@@ -918,31 +868,28 @@ align-items: center; */
 }
 
 /* FORM */
+
+
+input {
+	font-size: 16px;
+	min-height: 40px;
+	border-radius: 25px;
+	line-height: 20px;
+	padding: 15px 30px 16px;
+	border: 1px solid #b9b9af;
+	margin-bottom: 10px;
+	background-color: #fff;
+	opacity: 0.9;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+
 h3 {
 	color: black;
 }
 /* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-	width: 100%; /* Full width */
-	padding: 12px; /* Some padding */  
-	border: 1px solid #ccc; /* Gray border */
-	border-radius: 4px; /* Rounded borders */
-	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	margin-top: 6px; /* Add a top margin */
-	margin-bottom: 16px; /* Bottom margin */
-	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
 
-input[type=email], select, textarea {
-	width: 100%; /* Full width */
-	padding: 12px; /* Some padding */  
-	border: 1px solid #ccc; /* Gray border */
-	border-radius: 4px; /* Rounded borders */
-	box-sizing: border-box; /* Make sure that padding and width stays in place */
-	margin-top: 6px; /* Add a top margin */
-	margin-bottom: 16px; /* Bottom margin */
-	resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
 
 /* Style the submit button with a specific background color etc */
 input[type=submit] {
@@ -954,6 +901,14 @@ input[type=submit] {
 	cursor: pointer;
 }
 
+
+
+
+
+button {
+	/* background: #FDE3A7; */
+}
+
 /* When moving the mouse over the submit button, add a darker green color */
 input[type=submit]:hover {
 	background-color: blueviolet;
@@ -963,7 +918,6 @@ input[type=submit]:hover {
 .container {
 	border-radius: 5px;
 	background-color: #f2f2f2;
-	padding: 20px;
 }
 
 
@@ -979,6 +933,8 @@ input[type=submit]:hover {
 	 width:800px;
 	 margin:0 auto;
 }
+
+/* TAKE OUT */
 
 @media (max-width: 880px) {
   .container {
@@ -1026,7 +982,7 @@ input[type=submit]:hover {
   }
 }
 
-
+/* Phone */
 
 @media (max-width: 500px) {
 	

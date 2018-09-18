@@ -35,7 +35,7 @@ const Layout = ({ children }) => (
       {children()}
       <div className="footer">
         <div className="container">
-          <div className="row centered">
+          <div className="form">
             <h3>Contact Me</h3>
             {/* <h3>Form Goes Here</h3> */}
             <form
