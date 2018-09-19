@@ -1,13 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import Link from 'gatsby-link'
-import Header from '../components/header'
-import './index.css'
+import { Link } from 'gatsby'
+
+
+
+import Header from './header'
+import './layout.css'
+
 // import './../scss/index.scss'
-import label from './index.css'
-import input from './index.css'
-import buttonSubmit from './index.css'
+import label from './layout.css'
+import input from './layout.css'
+import buttonSubmit from './layout.css'
+
 
 const Layout = ({ children }) => (
   <div>
@@ -32,10 +37,10 @@ const Layout = ({ children }) => (
         </div>
         <div className="clear"></div>
       </div>
-      {children()}
+      {children}
       <div className="footer">
         <div className="container">
-          <div className="form">
+          <div className="row centered">
             <h3>Contact Me</h3>
             {/* <h3>Form Goes Here</h3> */}
             <form
@@ -106,3 +111,5 @@ Layout.propTypes = {
 }
 
 export default Layout;
+
+
