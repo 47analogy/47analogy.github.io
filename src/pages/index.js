@@ -28,7 +28,7 @@ const IndexPage = () => (
       {/* start About*/}
 
       <section className="about">
-        <div className="left-col">
+        {/* <div className="left-col">
           <h2>About Me</h2>
           <p className="mt">Hey, I'm Anthony Tweed, a software engineer in Atlanta. I'm a thinker and a problem solver. I see the computer as my lab where I run experiments and find solutions.</p>
           <p className="mt">When I'm not coding, I enjoy spending time outdoors in nature...the activity doesn't matter, as long as it varies.</p>
@@ -49,6 +49,31 @@ const IndexPage = () => (
         </div>
         <div className="right-col">
           <img src={myImg} className="img-responsive mt" alt="" />
+        </div> */}
+        <div className="about-container">
+          <div className="about-grid">
+            <div className="left-box">
+              <div className="about-me"></div>
+              <p className="about-text">Hey, I'm Anthony Tweed, a software engineer in Atlanta. I'm a thinker and a problem solver. I see the computer as my lab where I run experiments and find solutions.</p>
+              <p className="about-text">When I'm not coding, I enjoy spending time outdoors in nature...the activity doesn't matter, as long as it varies.</p>
+              <p className="about-text">My goal in the software game to create products and content that help consumers get what they need, when they want it, and make their lives more enjoyable in the process. </p>
+              <p className="about-text">I have experience with all stages of the fullstack software development process, including frameworks, servers, databases, testing, and deployment. I am a software engineer for all your needs.</p>
+              <div className="tech-stack">
+                <div className="tech-icons">
+                  <a href="#"><img src={jsImg} height="50" alt="" /></a>
+                  <a href="#"><img src={htmlImg} height="50" alt="" /></a>
+                  <a href="#"><img src={cssImg} height="50" alt="" /></a>
+                  <a href="#"><img src={reactImg} height="50" alt="" /></a>
+                  <a href="#"><img src={nodeImg} height="50" alt="" /></a>
+                  <a href="#"><img src={mongoImg} height="50" alt="" /></a>
+                  <a href="#"><img src={myImg} height="50" alt="" /></a>
+                  <a href="#"><img src={myImg} height="50" alt="" /></a>
+                </div>
+              </div>
+            </div>
+            <div className="image">
+              <img src={myImg} className="img-responsive" alt="" /></div>
+          </div>
         </div>
 
       </section>

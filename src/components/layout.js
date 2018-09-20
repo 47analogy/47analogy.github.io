@@ -28,8 +28,8 @@ const Layout = ({ children }) => (
         <div className="logo">CODETHINKER</div>
         <div className="menu-list hidden-xs">
           {/* <nav> */}
-          <Link to="/">HOME</Link>
-          <Link to="#about-section">ABOUT</Link>
+          <Link to="/">Home</Link>
+          <Link to="#about-section">About</Link>
           <Link to="#blog-section">Blog</Link>
           <Link to="#projects-section">Projects</Link>
           <Link to="#contact-section">Contact</Link>
