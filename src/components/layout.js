@@ -38,6 +38,9 @@ const Layout = ({ children }) => (
         <div className="clear"></div>
       </div>
       {children}
+
+
+
       <div className="footer">
         <div className="container">
           <div className="row centered">
@@ -47,61 +50,101 @@ const Layout = ({ children }) => (
               action="//formspree.io/atweed47@yahoo.com"
               method="POST"
             >
-              <label className={label} htmlFor="name">Name</label>
-              <input
-                className={input}
-                type="text"
-                placeholder="Your name..."
-                name="name"
-              />
+              <div className="contact-box">
+                <div className="contact">
+                  <div className="box-left">
+                    <label className="label" htmlFor="name">Name</label>
+                    <input
+                      className="input"
+                      type="text"
+                      placeholder="Your name..."
+                      name="name"
+                    />
+                  </div>
+                  <div className="box-left">
+                    <label className="label" htmlFor="_replyto">Email</label>
+                    <input
+                      className="input"
+                      type="email"
+                      placeholder="Your email..."
+                      name="_replyto"
+                    />
+                  </div>
+                  <div className="box">
+                    <label className="message" htmlFor="message">Message</label>
+                    <textarea
+                      className="messagearea"
+                      type="text"
+                      name="message"
+                      rows="4"
+                      columns="9"
+                      placeholder="Message..."
+                    />
 
 
-              <label className={label} htmlFor="_replyto">Email</label>
-              <input
-                className={input}
-                type="email"
-                placeholder="Your email..."
-                name="_replyto"
-              />
 
 
-              <label className="message" htmlFor="message">Message</label>
-              <textarea
-                className={input}
-                name="message"
-                rows="3"
-                placeholder="Message..."
-              />
+                    <button >
+                      <input className="buttonSubmit" type="submit" value="Send" />
+                    </button>
+
+
+                    <input
+                      type="hidden"
+                      name="_subject"
+                      value="Message via http://anthonytweed.com"
+                    />
+
+                  </div>
+
+
+                </div>
+
+                {/* <div className="box">
+                  <label className="message" htmlFor="message">Message</label>
+                  <textarea
+                    className="messagearea"
+                    type="text"
+                    name="message"
+                    rows="4"
+
+                    placeholder="Message..."
+                  />
 
 
 
 
-              <button >
-                <input className="buttonSubmit" type="submit" value="Send" />
-              </button>
+                  <button >
+                    <input className="buttonSubmit" type="submit" value="Send" />
+                  </button>
 
 
-              <input
-                type="hidden"
-                name="_subject"
-                value="Message via http://anthonytweed.com"
-              />
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="Message via http://anthonytweed.com"
+                  />
 
+                </div> */}
+              </div>
             </form>
 
 
             {/* add social media here */}
             <h5>ACTWEED47@GMAIL.COM</h5>
 
-            {/* <p className="mt">
-              <a href="#"><i className="ion-social-twitter"></i></a>
-              <a href="#"><i className="ion-social-instagram"></i></a>
-              <a href="#"><i className="ion-social-facebook"></i></a>
+            {/* <p classNameName="mt">
+              <a href="#"><i classNameName="ion-social-twitter"></i></a>
+              <a href="#"><i classNameName="ion-social-instagram"></i></a>
+              <a href="#"><i classNameName="ion-social-facebook"></i></a>
             </p> */}
             <h6 className="mt">COPYRIGHT 2018 - CODETHINKER</h6>
           </div>
         </div>
       </div>
+
+
+
     </div>
   </div>
 )

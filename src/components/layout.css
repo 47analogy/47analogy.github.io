@@ -834,6 +834,7 @@ h1 {
 
 
 /* FOOTER */
+
 .footer {
 	display: flex;
 	justify-content: center;
@@ -843,7 +844,177 @@ h1 {
 	color: black;
 }
 
+/* .footer h5 {
+	margin-top: 30px;
+	letter-spacing: 1px;
+}
+
+.footer i {
+	font-size: 45px;
+	margin: 15px;
+}
+
+.footer a {
+	color: #b9b9b9;
+}
+
+.footer a:hover {
+	color: #03C9A9;
+}
+*/
+
 .footer h5 {
+	text-align: center;
+} 
+
+.footer .mt {
+	text-align: center;
+}
+
+/* FORM */
+
+form {
+  /* background: red;
+	display: flex;
+	justify-content: space-between; */
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+
+}
+.contact-box {
+  display: flex;
+justify-content: space-around;
+  /* background: blue; */
+}
+
+.box {
+ /* width: 74%; */
+ display: flex;
+}
+
+.box-left {
+  /* margin-bottom: 20px; */
+}
+
+.label {
+  /* background: green; */
+  display: flex;
+  flex-direction: column;
+  
+}
+
+h3 {
+	color: black;
+}
+
+.message {
+  /* background: yellow; */
+  display: flex;
+  /* flex-direction: column; */
+}
+
+.message h1 {
+	width:800px;
+	margin:0 auto;
+	margin: 47px 0;
+}
+
+input textarea {
+	width: 200px;
+	font-size: 16px;
+	min-height: 40px;
+	border-radius: 10px;
+	line-height: 20px;
+	padding: 15px 30px 16px;
+	border: 1px solid #b9b9af;
+	margin-bottom: 10px;
+	background-color: #fff;
+	opacity: 0.9;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+
+input messagearea {
+	/* background: green; */
+	font-size: 16px;
+	min-height: 40px;
+	border-radius: 10px;
+	line-height: 20px;
+	padding: 15px 30px 16px;
+	border: 1px solid #b9b9af;
+	margin-bottom: 10px;
+	background-color: #fff;
+	opacity: 0.9;
+	-webkit-transition: background-color 0.2s;
+	transition: background-color 0.2s;
+}
+
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+	background-color: blue;
+	color: white;
+	padding: 12px 20px;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+}
+
+
+
+
+
+/* button {
+	background: #FDE3A7;
+} */
+
+
+
+
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+	background-color: blueviolet;
+}
+
+/* background color and some padding around the form */
+.footer .container {
+	width: 74%;
+	border-radius: 5px;
+	background-color: #f2f2f2;
+}
+
+
+
+
+
+/* .img-ruff{
+	 margin-top: 47px;
+	 width:800px;
+	 margin:0 auto;
+} */
+
+
+
+
+
+
+
+/* FOOTER
+.footer {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+	padding-bottom: 20px;
+	background: #828282;
+	color: black;
+} */
+
+/* .footer h5 {
 	margin-top: 30px;
 	letter-spacing: 1px;
 }
@@ -863,82 +1034,14 @@ h1 {
 
 .footer h5 {
 	text-align: center;
-}
+} */
 
-.footer .mt {
+/* .footer .mt {
 	text-align: center;
-}
-
-/* FORM */
-
-form {
-	display: flex;
-	justify-content: column;
-
-}
-input textarea {
-	
-	font-size: 16px;
-	min-height: 40px;
-	border-radius: 10px;
-	line-height: 20px;
-	padding: 15px 30px 16px;
-	border: 1px solid #b9b9af;
-	margin-bottom: 10px;
-	background-color: #fff;
-	opacity: 0.9;
-	-webkit-transition: background-color 0.2s;
-	transition: background-color 0.2s;
-}
+} */
 
 
-h3 {
-	color: black;
-}
-/* Style inputs with type="text", select elements and textareas */
-
-.message {
-	
-}
-
-/* Style the submit button with a specific background color etc */
-input[type=submit] {
-	background-color: blue;
-	color: white;
-	padding: 12px 20px;
-	border: none;
-	border-radius: 4px;
-	cursor: pointer;
-}
-
-
-
-
-
-button {
-	/* background: #FDE3A7; */
-}
-
-/* When moving the mouse over the submit button, add a darker green color */
-input[type=submit]:hover {
-	background-color: blueviolet;
-}
-
-/* background color and some padding around the form */
-.footer .container {
-	width: 74%;
-	border-radius: 5px;
-	background-color: #f2f2f2;
-}
-
-
-
-.message h1 {
-	width:800px;
-	margin:0 auto;
-	margin: 47px 0;
-}
-
+/* ??? */
 .img-ruff{
 	 margin-top: 47px;
 	 width:800px;
