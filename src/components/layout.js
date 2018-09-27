@@ -38,119 +38,52 @@ const Layout = ({ children }) => (
         <div className="clear"></div>
       </div>
       {children}
-
-
-
       <div className="footer">
-        <div className="container">
-          <div className="row centered">
-            <h3>Contact Me</h3>
-            {/* <h3>Form Goes Here</h3> */}
-            <form
-              action="//formspree.io/atweed47@yahoo.com"
-              method="POST"
-            >
-              <div className="contact-box">
-                <div className="contact">
-                  <div className="box-left">
-                    <label className="label" htmlFor="name">Name</label>
-                    <input
-                      className="input"
-                      type="text"
-                      placeholder="Your name..."
-                      name="name"
-                    />
+        <div className="contact-container">
+          {/* <div className="contact-info"> */}
+          <h3>Contact Me</h3>
+          <form action="//formspree.io/atweed47@yahoo.com" method="POST">
+            <div className="form-container">
+              <div className="form">
+                <div className="outer">
+                  <div className="one"><label className="label" htmlFor="name">Name</label>
+                    <input className="input" type="text" placeholder="Your name..." name="name" /></div>
+                  <div className="two"><label className="label" htmlFor="_replyto">Email</label>
+                    <input className="input" type="email" placeholder="Your email..." name="_replyto" /></div>
+                </div>
+                <div className="inner">
+                  <div className="two"> <label className="message" htmlFor="message">Message</label>
+                    <textarea rows="4" cols="47" className="messagearea" type="text" placeholder="Message..." name="message"></textarea>
                   </div>
-                  <div className="box-left">
-                    <label className="label" htmlFor="_replyto">Email</label>
-                    <input
-                      className="input"
-                      type="email"
-                      placeholder="Your email..."
-                      name="_replyto"
-                    />
-                  </div>
-                  <div className="box">
-                    <label className="message" htmlFor="message">Message</label>
-                    <textarea
-                      className="messagearea"
-                      type="text"
-                      name="message"
-                      rows="4"
-                      columns="9"
-                      placeholder="Message..."
-                    />
-
-
-
-
-                    <button >
-                      <input className="buttonSubmit" type="submit" value="Send" />
-                    </button>
-
-
+                  <div className="buttonSubmit">
+                    <input type="submit" value="Send" />
                     <input
                       type="hidden"
                       name="_subject"
                       value="Message via http://anthonytweed.com"
                     />
-
                   </div>
-
-
                 </div>
-
-                {/* <div className="box">
-                  <label className="message" htmlFor="message">Message</label>
-                  <textarea
-                    className="messagearea"
-                    type="text"
-                    name="message"
-                    rows="4"
-
-                    placeholder="Message..."
-                  />
-
-
-
-
-                  <button >
-                    <input className="buttonSubmit" type="submit" value="Send" />
-                  </button>
-
-
-                  <input
-                    type="hidden"
-                    name="_subject"
-                    value="Message via http://anthonytweed.com"
-                  />
-
-                </div> */}
               </div>
-            </form>
-
-
-            {/* add social media here */}
-            <h5>ACTWEED47@GMAIL.COM</h5>
-
-            {/* <p classNameName="mt">
-              <a href="#"><i classNameName="ion-social-twitter"></i></a>
-              <a href="#"><i classNameName="ion-social-instagram"></i></a>
-              <a href="#"><i classNameName="ion-social-facebook"></i></a>
-            </p> */}
-            <h6 className="mt">COPYRIGHT 2018 - CODETHINKER</h6>
-          </div>
+            </div>
+          </form>
         </div>
       </div>
+      <div className="footer-text">
+        <h6>COPYRIGHT 2018 - CODETHINKER</h6>
 
-
-
+        {/* <p classNameName="mt">
+  <a href="#"><i classNameName="ion-social-twitter"></i></a>
+  <a href="#"><i classNameName="ion-social-instagram"></i></a>
+  <a href="#"><i classNameName="ion-social-facebook"></i></a>
+</p> */}
+      </div>
     </div>
   </div>
 )
 
 Layout.propTypes = {
-  children: PropTypes.func,
+  children: PropTypes.array,
 }
 
 export default Layout;
