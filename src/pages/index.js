@@ -95,7 +95,7 @@ const IndexPage = () => (
         <div className="blogs">
           <h1>Blog</h1>
           <div id="blog-post-1">
-            <p><Link to="/page-2/">Implementing KISS</Link></p>
+            <p><Link to="/kiss/">Implementing KISS</Link></p>
           </div>
           <div id="blog-post-2">
             <p><Link to="/page-2/">Lorem Ipsum Link Blog Page Post-2</Link></p>

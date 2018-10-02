@@ -2,6 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
+import Media from 'react-media'
 
 
 
@@ -41,7 +42,7 @@ const Layout = ({ children }) => (
       <div className="footer">
         <div className="contact-container">
           {/* <div className="contact-info"> */}
-          <h3>Contact Me</h3>
+          <h3>Let's Talk!</h3>
           <form action="//formspree.io/atweed47@yahoo.com" method="POST">
             <div className="form-container">
               <div className="form">
