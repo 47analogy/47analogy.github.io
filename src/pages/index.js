@@ -2,7 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import myImg from '../assets/ruff.png'
+import myImg from '../assets/act.png'
 import jsImg from '../assets/js-icon.svg'
 import htmlImg from '../assets/html5-icon.svg'
 import reactImg from '../assets/react-icon.svg'
@@ -30,7 +30,7 @@ const IndexPage = () => (
     <div className="content">
       {/* start About*/}
 
-      <section className="about">
+      <section id="about-section">
         <div className="about-container">
           <div className="about-grid">
             <div className="left-box">
@@ -42,18 +42,15 @@ const IndexPage = () => (
               <p className="about-text">I have experience with all stages of the fullstack software development process, including frameworks, servers, databases, testing, and deployment. I am a software engineer for all your needs.</p>
               <div className="tech-stack">
                 <div className="tech-icons">
-                  <a href="#"><img src={jsImg} height="50" alt="" /></a>
-                  <a href="#"><img src={htmlImg} height="50" alt="" /></a>
-                  <a href="#"><img src={cssImg} height="50" alt="" /></a>
-                  <a href="#"><img src={reactImg} height="50" alt="" /></a>
-                  <a href="#"><img src={pythonImg} height="50" alt="" /></a>
-                  <a href="#"><img src={nodeImg} height="50" alt="" /></a>
-                  <a href="#"><img src={expressImg} height="50" alt="" /></a>
-                  <a href="#"><img src={sqlImg} height="50" alt="" /></a>
-                  <a href="#"><img src={mongoImg} height="50" alt="" /></a>
-
-
-
+                  <img className="tech-img" src={jsImg} height="50" alt="JavaScript" />
+                  <img className="tech-img" src={htmlImg} height="50" alt="HTML" />
+                  <img className="tech-img" src={cssImg} height="50" alt="CSS" />
+                  <img className="tech-img" src={reactImg} height="50" alt="React" />
+                  <img className="tech-img" src={pythonImg} height="50" alt="Python" />
+                  <img className="tech-img" src={nodeImg} height="50" alt="Node" />
+                  <img className="tech-img" src={expressImg} height="50" alt="Express" />
+                  <img className="tech-img" src={sqlImg} height="50" alt="SQL" />
+                  <img className="tech-img" src={mongoImg} height="50" alt="MongoDB" />
                 </div>
               </div>
             </div>
@@ -99,28 +96,51 @@ const IndexPage = () => (
 
       {/* start blog posts */}
       <section id="blog-section">
-        <div className="blogs">
-          <h1>Blog</h1>
-          <div id="blog-post-1">
-            <p><Link to="/kiss/">Implementing KISS</Link></p>
+
+        <div className="grid-container">
+          <div className="blog-title">
+            <h3>BLOG</h3>
           </div>
-          <div id="blog-post-2">
-            <p><Link to="/page-2/">Lorem Ipsum Link Blog Page Post-2</Link></p>
-          </div >
-          {/* < div >
-              <p><Link to="/page-2/">Lorem Ipsum Link Blog Page Post-3</Link></p>
-            </div >
-            < div >
-              <p><Link to="/page-2/">Lorem Ipsum Link Blog Page Post-4</Link></p>
-            </div > */}
-          <p>
-            <button className="btn btn-conf-2 btn-green">
-              <Link to="/page-2/">See All Posts</Link>
-            </button>
-          </p>
+
+          <div className="blog-content">
+
+
+            <article className="new-blog">
+              <div>
+                <div className="blog-header">
+                  <div><Link to="/kiss/">Implementing KISS</Link></div>
+                </div>
+                <p>As I continue my journey in software development...</p>
+              </div>
+            </article>
+
+            <article className="new-blog">
+              <div>
+                <div className="blog-header">
+                  <div><a href="#">Need to get my blog game up</a></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </article>
+
+            <article className="new-blog">
+              <div>
+                <div className="blog-header">
+                  <div><a href="#">Really need to get my blog game up</a></div>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+              </div>
+            </article>
+            <p>
+              <button className="btn btn-conf-2 btn-green">
+                <Link to="/page-2/">See All Posts</Link>
+              </button>
+            </p>
+          </div>
+
+
         </div>
       </section>
-
       {/* end blog posts */}
 
 

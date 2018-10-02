@@ -2,18 +2,13 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
-import Media from 'react-media'
-
-
-
-import Header from './header'
 import './layout.css'
-
-// import './../scss/index.scss'
 import label from './layout.css'
 import input from './layout.css'
-import buttonSubmit from './layout.css'
-
+// import buttonSubmit from './layout.css'
+// import Media from 'react-media' use this for media queries
+// import Header from './header'
+// import './../scss/index.scss' use this for sass
 
 const Layout = ({ children }) => (
   <div>
@@ -32,7 +27,7 @@ const Layout = ({ children }) => (
           <Link to="/">Home</Link>
           <Link to="#about-section">About</Link>
           <Link to="#blog-section">Blog</Link>
-          <Link to="#projects-section">Projects</Link>
+          <Link to="#project-section">Projects</Link>
           <Link to="#contact-section">Contact</Link>
           {/* </nav> */}
         </div>
@@ -40,7 +35,7 @@ const Layout = ({ children }) => (
       </div>
       {children}
       <div className="footer">
-        <div className="contact-container">
+        <div id="contact-section">
           {/* <div className="contact-info"> */}
           <h3>Let's Talk!</h3>
           <form action="//formspree.io/atweed47@yahoo.com" method="POST">
