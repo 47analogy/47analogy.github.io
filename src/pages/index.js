@@ -9,6 +9,10 @@ import reactImg from '../assets/react-icon.svg'
 import cssImg from '../assets/css-icon.svg'
 import nodeImg from '../assets/node-icon.svg'
 import mongoImg from '../assets/mongo-icon.svg'
+import pythonImg from '../assets/python-icon.png'
+import sqlImg from '../assets/sql-icon.png'
+import expressImg from '../assets/express-icon.png'
+
 const IndexPage = () => (
   <Layout>
 
@@ -16,7 +20,6 @@ const IndexPage = () => (
       <div className="container">
         <div className="row">
           <div className="col-md-8 col-md-offset-2 centered">
-            {/* <h1>I'm Anthony Tweed <br /> A Software Engineer <br />for all your needs...</h1> */}
             <div className="mtb">
             </div>
           </div>
@@ -43,10 +46,14 @@ const IndexPage = () => (
                   <a href="#"><img src={htmlImg} height="50" alt="" /></a>
                   <a href="#"><img src={cssImg} height="50" alt="" /></a>
                   <a href="#"><img src={reactImg} height="50" alt="" /></a>
+                  <a href="#"><img src={pythonImg} height="50" alt="" /></a>
                   <a href="#"><img src={nodeImg} height="50" alt="" /></a>
+                  <a href="#"><img src={expressImg} height="50" alt="" /></a>
+                  <a href="#"><img src={sqlImg} height="50" alt="" /></a>
                   <a href="#"><img src={mongoImg} height="50" alt="" /></a>
-                  <a href="#"><img src={myImg} height="50" alt="" /></a>
-                  <a href="#"><img src={myImg} height="50" alt="" /></a>
+
+
+
                 </div>
               </div>
             </div>
