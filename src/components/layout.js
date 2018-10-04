@@ -2,11 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
+import Media from 'react-media' //use this for media queries
 import './layout.css'
 import label from './layout.css'
 import input from './layout.css'
 // import buttonSubmit from './layout.css'
-// import Media from 'react-media' use this for media queries
+
 // import Header from './header'
 // import './../scss/index.scss' use this for sass
 
@@ -20,25 +21,41 @@ const Layout = ({ children }) => (
       ]}
     />
     <div>
+
       <div className="menu">
         <div className="logo">CODETHINKER</div>
-        <div className="menu-list hidden-xs">
-          {/* <nav> */}
-          <Link to="/">Home</Link>
-          <Link to="#about-section">About</Link>
-          <Link to="#blog-section">Blog</Link>
-          <Link to="#project-section">Projects</Link>
-          <Link to="#contact-section">Contact</Link>
-          {/* </nav> */}
+        <div className="menu-list">
+          <nav>
+            <Link to="/">Home</Link>
+            <Link to="#about-section">About</Link>
+            <Link to="#blog-section">Blog</Link>
+            <Link to="#project-section">Projects</Link>
+            <Link to="#contact-section">Contact</Link>
+          </nav>
         </div>
-        <div className="clear"></div>
+        {/* <div className="clear"></div> */}
       </div>
       {children}
-      <div className="footer">
-        <div id="contact-section">
-          {/* <div className="contact-info"> */}
-          <h3>Let's Talk!</h3>
-          <form action="//formspree.io/atweed47@yahoo.com" method="POST">
+
+
+
+
+    </div>
+  </div>
+)
+
+Layout.propTypes = {
+  children: PropTypes.array,
+}
+
+export default Layout;
+
+
+{/* <div className="footer">
+        <div id="contact-section"> */}
+{/* <div className="contact-info"> */ }
+{/* <h3>Let's Talk!</h3> */ }
+{/* <form action="//formspree.io/atweed47@yahoo.com" method="POST">
             <div className="form-container">
               <div className="form">
                 <div className="outer">
@@ -62,26 +79,19 @@ const Layout = ({ children }) => (
                 </div>
               </div>
             </div>
-          </form>
-        </div>
-      </div>
-      <div className="footer-text">
+          </form> */}
+{/* </div>
+      </div> */}
+{/* <div className="footer-text">
         <h6>COPYRIGHT 2018 - CODETHINKER</h6>
 
-        {/* <p classNameName="mt">
+         <p classNameName="mt">
   <a href="#"><i classNameName="ion-social-twitter"></i></a>
   <a href="#"><i classNameName="ion-social-instagram"></i></a>
   <a href="#"><i classNameName="ion-social-facebook"></i></a>
-</p> */}
-      </div>
-    </div>
-  </div>
-)
+</p> 
+      </div> 
+      */}
 
-Layout.propTypes = {
-  children: PropTypes.array,
-}
-
-export default Layout;
 
 
