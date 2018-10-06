@@ -55,7 +55,7 @@ const IndexPage = () => (
                 </div>
               </div>
               <div className="image">
-                <img src={myImg} className="img-responsive" alt="" /></div>
+                <img src={myImg} className="img-me" alt="ACT" /></div>
             </div>
           </div>
 
