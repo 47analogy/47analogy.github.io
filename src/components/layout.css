@@ -655,6 +655,7 @@ pre tt:after {
   height: 80px;
   display: flex;
   justify-content: space-between;
+  padding: 0 2%;
   border: 2px solid green;
 }
 
@@ -676,14 +677,23 @@ pre tt:after {
 .menu .menu-list {
   margin-top: 30px;
   color: white;
+  width: 34%;
+  /* border: 2px solid green; */
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+   /* border: 2px solid red; */
 }
 
 .menu .menu-list a {
-	margin-left: 4%;
+	/* margin-left: 4%; */
 	font-family: Lato,sans-serif;
   font-size: 18px;
   color: white; 
   font-weight: 900;
+ 
 }
 
 /* ABOUT */
@@ -858,7 +868,7 @@ h1 {
     margin-right: 20%;
   }
 
-  .one {
+  .contact-info {
     margin-bottom: 15px;
   }
   
@@ -874,6 +884,7 @@ h1 {
   }
   
   .message {
+    margin-top: 15px;
     display: flex;
     flex-direction: column;
   }
@@ -921,77 +932,111 @@ input[type=submit]:hover {
 /* Phone */
 
 @media (max-width: 500px) {
-  .container {
-    margin: auto;
-  }
 
-  .content{
-    width: 85%;
-  }
+ .content{
+   margin: 0;
+   width: 100%;
 
-  .logo {
-      display: none;
-  }
+ }
 
-  .menu {
-    justify-content: center;
-  }
-    
-
-  .about-container {	
-    padding: 0;
-  }
-
-  .about-grid {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-    
-  .left-box {
-      order: 2;
-  }
+.logo {
+    display: none;
+}
 
 
-
-  .tech-stack {
-    width: 74%;
-    margin: auto;  
-  }
-
-  .tech-icons{
-    margin: 0;
-    flex-wrap: wrap;
-  }
-
-  .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  } 
-
-  #project-section {
-    margin-bottom: 0;
-  }
+.menu .menu-list {
+  width: 100%;
+}
 
 
-  #blog-section {
-    width: 100%;
-  }
+.menu .menu-list a {
+  display: flex;
+  justify-content: center;
 
-  .grid-container {
-    display: flex;
-    flex-direction: column;
-  }
+ 
+}
 
-  .blog-content {
-    padding: 0;
-  }
 
-  .about-text {
-    padding: 0;
-  }
+.about-container {	
+	padding: 0;
+}
 
+.about-grid {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+  
+.left-box {
+  order: 2;
+}
+
+.about-text {
+  padding: 0 4%;
+}
+
+.tech-stack {
+  width: 74%;
+  margin: auto;  
+}
+
+.tech-icons{
+  margin: auto;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+} 
+
+.card { 
+  width: 74%;
+}
+
+
+#project-section {
+	margin-bottom: 0;
+}
+
+
+#blog-section {
+  width: 100%;
+  display: flex;
+}
+
+.grid-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.blog-content {
+  padding: 0;
+}
+
+
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  padding-left: 2%;
+}
+
+.contact-infoh3 {
+  display: flex;
+}
+
+ .form {
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   /* margin-bottom: 20px; */
+   padding-left: 2%;
+ }
 }
 
