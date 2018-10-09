@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-
 import Layout from '../components/layout'
 import myImg from '../assets/act.png'
 import jsImg from '../assets/js-icon.svg'
@@ -12,19 +11,15 @@ import mongoImg from '../assets/mongo-icon.svg'
 import pythonImg from '../assets/python-icon.png'
 import sqlImg from '../assets/sql-icon.png'
 import expressImg from '../assets/express-icon.png'
+import hairSprayImg from '../assets/hairspray.png'
+import bookVoteImg from '../assets/book-vote.png'
+import ruffImg from '../assets/ruff.png'
+
 
 const IndexPage = () => (
   <Layout>
     <div className="container">
       <div className="header">
-
-        {/* <div className="row">
-          <div className="col-md-8 col-md-offset-2 centered">
-            <div className="mtb">
-            </div>
-          </div>
-        </div> */}
-
       </div>
 
       <div className="content">
@@ -69,22 +64,22 @@ const IndexPage = () => (
         <section id="project-section">
           <div className="project">
             <div className="card">
-              <img id="pj-img1" src={myImg} alt='img' />
+              <img id="pj-img1" src={hairSprayImg} alt='hair spray' />
               <h1>Hairspray</h1>
               <p>Hair salon app that allows a user to schedule and provide feedback on services.</p>
               <p>Team project built with React, Redux, Express, MongoDB, Node, Twilio and Stripe</p>
-              <p>Link to Code</p>
+              <p><a href="https://obscure-island-58835.herokuapp.com/">HairSpray</a></p>
             </div>
             <div className="card">
-              <img id="pj-img1" src={myImg} alt='img' />
+              <img id="pj-img1" src={bookVoteImg} alt='book vote' />
               <h1>Book Vote</h1>
               <p>Book voting app that allows a user to search for and review books.</p>
               <p>Hackathon project built using React, Express, MongoDB, and Node</p>
-              <p>Link to Code</p>
+              <p><a href="https://github.com/hackathon-dudes/bookVote">Book Vote</a></p>
             </div>
             <div className="card">
-              <img id="pj-img1" src={myImg} alt='img' />
-              <h1>Coming Soon</h1>
+              <img id="pj-img1" src={ruffImg} alt='img' />
+              <h1>Coming...</h1>
               <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore nemore percipit in cum.</p>
               <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore Lorem ipsum dolor.</p>
               <p>Link to Code</p>
@@ -126,7 +121,7 @@ const IndexPage = () => (
               <article className="new-blog">
                 <div>
                   <div className="blog-header">
-                    <div><Link to="#">Really need to get my blog game up</Link></div>
+                    <div><Link to="/kiss/">Really need to get my blog game up</Link></div>
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>

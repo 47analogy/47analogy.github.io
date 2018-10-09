@@ -678,17 +678,14 @@ pre tt:after {
   margin-top: 30px;
   color: white;
   width: 34%;
-  /* border: 2px solid green; */
 }
 
 nav {
   display: flex;
   justify-content: space-around;
-   /* border: 2px solid red; */
 }
 
 .menu .menu-list a {
-	/* margin-left: 4%; */
 	font-family: Lato,sans-serif;
   font-size: 18px;
   color: white; 
@@ -822,7 +819,22 @@ h1 {
   padding: 25px 7%;
 }
 
+
 /* END BLOG */
+
+/* blog-pages start */
+.blog-container {
+  padding: 0 4%;
+}
+
+.blog-text p{
+  padding: 0 4%;
+}
+
+.home-link {
+  margin-bottom: 25px;
+}
+/*blog-pages end */
 
 
 /* FOOTER */
@@ -839,9 +851,6 @@ h1 {
 
 /* FORM */
 
-/* #contact-section {
-
-} */
   
   .form {
     width: 950px;
@@ -854,9 +863,6 @@ h1 {
     color: black;
   }
   
-  /* .message {
-  
-  } */
   
   .message h1 {
     width:800px;
@@ -896,7 +902,7 @@ h1 {
     
   }
   
-  /* Style the submit buttonbackground color */
+  /* submit button background color */
   input[type=submit] {
     margin-left: 7%;
     background-color: blue;
@@ -1035,7 +1041,6 @@ input[type=submit]:hover {
    display: flex;
    flex-direction: column;
    align-items: flex-start;
-   /* margin-bottom: 20px; */
    padding-left: 2%;
  }
 }

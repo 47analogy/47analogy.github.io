@@ -2,16 +2,12 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Link } from 'gatsby'
-import Media from 'react-media' //use this for media queries
 import './layout.css'
 import label from './layout.css'
 import input from './layout.css'
 import githubImg from '../assets/github.svg'
 import twitterImg from '../assets/twitter.svg'
 import linkedInImg from '../assets/linkedIn.svg'
-// import buttonSubmit from './layout.css'
-
-// import Header from './header'
 // import './../scss/index.scss' use this for sass
 
 const Layout = ({ children }) => (
@@ -72,7 +68,7 @@ const Layout = ({ children }) => (
         </div>
         <div className="footer-text">
           <h6>COPYRIGHT 2018 - CODETHINKER</h6>
-          <p classNameName="mt">
+          <p className="mt">
             <a href="https://www.linkedin.com/in/anthony-tweed/"><img className="linkedIn-img" src={linkedInImg} height="40" alt="LinkedIn" /></a>
             <a href="https://github.com/47analogy"><img className="github-img" src={githubImg} height="40" alt="GitHub" /></a>
             <a href="https://twitter.com/atweed47"> <img className="twitter-img" src={twitterImg} height="40" alt="Twitter" /></a>
@@ -84,7 +80,7 @@ const Layout = ({ children }) => (
 )
 
 Layout.propTypes = {
-  children: PropTypes.array,
+  children: PropTypes.object,
 }
 
 export default Layout;
