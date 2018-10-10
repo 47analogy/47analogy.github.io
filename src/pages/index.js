@@ -66,8 +66,8 @@ const IndexPage = () => (
             <div className="card">
               <img id="pj-img1" src={hairSprayImg} alt='hair spray' />
               <h1>Hairspray</h1>
-              <p>Hair salon app that allows a user to schedule and provide feedback on services.</p>
-              <p>Team project built with React, Redux, Express, MongoDB, Node, Twilio and Stripe</p>
+              <p>Hair salon app that allows a user to schedule/provide feedback on services.</p>
+              <p>Team project built with React, Redux,  MongoDB, Node, Twilio and Stripe</p>
               <p><a href="https://obscure-island-58835.herokuapp.com/">HairSpray</a></p>
             </div>
             <div className="card">
@@ -80,8 +80,8 @@ const IndexPage = () => (
             <div className="card">
               <img id="pj-img1" src={ruffImg} alt='img' />
               <h1>Bundys Shoes</h1>
-              <p>CRUD app that allows a user to view and rate stylish shoes.</p>
-              <p>Solo project built using React, Redux, Feathers, MongoDB, and React Bootstrap</p>
+              <p>CRUD app that allows a user to select, view and rate stylish shoes.</p>
+              <p>Solo project built using React, Redux, Feathers, MongoDB, and Reactstrap</p>
               <p><a href="https://github.com/47analogy/Bundys-Shoes">Coming Soon</a></p>
             </div>
 
