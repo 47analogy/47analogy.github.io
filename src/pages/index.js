@@ -79,10 +79,10 @@ const IndexPage = () => (
             </div>
             <div className="card">
               <img id="pj-img1" src={ruffImg} alt='img' />
-              <h1>Coming...</h1>
-              <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore nemore percipit in cum.</p>
-              <p>Lorem ipsum dolor sit amet, at eam sint quot facer, labore Lorem ipsum dolor.</p>
-              <p>Link to Code</p>
+              <h1>Bundys Shoes</h1>
+              <p>CRUD app that allows a user to view and rate stylish shoes.</p>
+              <p>Solo project built using React, Redux, Feathers, MongoDB, and React Bootstrap</p>
+              <p><a href="https://github.com/47analogy/Bundys-Shoes">Coming Soon</a></p>
             </div>
 
           </div>
