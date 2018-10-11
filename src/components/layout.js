@@ -36,36 +36,7 @@ const Layout = ({ children }) => (
       {children}
 
       <div className="footer">
-        <div id="contact-section">
-          <div className="contact-info">
-            <h3>Let's Talk!</h3>
-            <form action="//formspree.io/atweed47@yahoo.com" method="POST">
-              <div className="form-container">
-                <div className="form">
-                  <div className="outer">
-                    <div className="contact-info"><label className="label" htmlFor="name">Name</label>
-                      <input className="input" type="text" placeholder="Your name..." name="name" /></div>
-                    <div className="two"><label className="label" htmlFor="_replyto">Email</label>
-                      <input className="input" type="email" placeholder="Your email..." name="_replyto" /></div>
-                  </div>
-                  <div className="inner">
-                    <div className="contact-message"> <label className="message" htmlFor="message">Message</label>
-                      <textarea rows="4" cols="47" className="messagearea" type="text" placeholder="Message..." name="message"></textarea>
-                    </div>
-                    <div className="buttonSubmit">
-                      <input type="submit" value="Send" />
-                      <input
-                        type="hidden"
-                        name="_subject"
-                        value="Message via http://anthonytweed.com"
-                      />
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
+
         <div className="footer-text">
           <h6>COPYRIGHT 2018 - CODETHINKER</h6>
           <p className="mt">

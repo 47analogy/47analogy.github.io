@@ -137,6 +137,28 @@ const IndexPage = () => (
           </div>
         </section>
         {/* end blog posts */}
+
+        {/* start contact */}
+        <section className="contact" id="contact-section">
+          <h3>Let's Talk!</h3>
+          <form method="POST" action="//formspree.io/atweed47@yahoo.com" className="contact-form">
+            <label className="name-label" htmlFor="name">Name:
+                    <input type="text" name="name" placeholder="Your name..." className="contact-input" required="" />
+            </label>
+            <label className="email-label" htmlFor="_replyto">Email:
+                    <input type="email" name="_replyto" placeholder="Your email..." className="contact-input" required="" />
+            </label>
+            <label className="label-message" htmlFor="message">Message:
+                <textarea name="message" placeholder="Your message..." className="contact-message" required=""></textarea>
+            </label>
+            <div className="buttonSubmit">
+              <input type="submit" value="Send" />
+              <input type="hidden" name="_subject" value="Message via http://anthonytweed.com" />
+            </div>
+          </form>
+        </section>
+        {/* end contact */}
+
       </div>
     </div>
   </Layout>

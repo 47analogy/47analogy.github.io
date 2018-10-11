@@ -692,7 +692,7 @@ nav {
  
 }
 
-/* ABOUT */
+/* ABOUT  SECTION */
 
 #about-section {
 margin-top: 100px;
@@ -709,8 +709,6 @@ margin-top: 100px;
   display: flex;
 	justify-content: space-end;
 }
-
-
 
 .about-text {
   font-family: 'Lato', sans-serif;
@@ -745,10 +743,7 @@ margin-top: 100px;
   border-radius: 10%;
 }
 
-/* END ABOUT */
-
-
-/* Projects */
+/* PROJECT SECTION */
 
 #project-section {
   display: flex;
@@ -789,9 +784,9 @@ h1 {
   font-weight: lighter;
   
 }
-/* END PROJECT */
 
 
+/* BLOG SECTION */
 
 .grid-container {
   max-width: 900px;
@@ -818,10 +813,6 @@ h1 {
   padding: 25px 7%;
 }
 
-
-/* END BLOG */
-
-/* blog-pages start */
 .blog-container {
   padding: 0 4%;
 }
@@ -833,214 +824,202 @@ h1 {
 .home-link {
   margin-bottom: 25px;
 }
-/*blog-pages end */
 
 
-/* FOOTER */
+/* CONTACT SECTION */
 
-.footer {
-	display: flex;
-	justify-content: center;
-	padding-top: 10px;
-	background: #828282;
-	color: black;
-}
-
-
-
-/* FORM */
-
+  .contact {
+      display: flex;
+      flex-direction: column;
+      align-items: center; 
+    }
   
-  .form {
-    width: 950px;
-    display: flex;
-  
-     justify-content: space-end;
+    .contact h3 {
+    font-size: 30px;
+  }
+
+    .contact-form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      border: 1px solid black;
+      border-radius: 5px;
+      width: 74%;
+      padding: 2rem;
+      margin-top: 20px; 
   }
   
-  h3 {
+  .contact-form input {
+        height: 38px;
+        font-size: 1rem;
+        padding-left: 5px;
+        padding-top: 2px;
+        margin-top: 5px;
+        border: 1px solid gray;
+        border-radius: 5px;
+        width: 100%; }
+  
+    .contact-input {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      margin-bottom: 20px;
+      line-height: 2rem; 
+  }
+
+    .contact-message {
+      font-size: 1rem;
+      padding-left: 5px;
+      padding-top: 2px;
+      margin-top: 5px;
+      border: 1px solid #7098B5;
+      border-radius: 5px;
+      height: 100px;
+      margin-bottom: 20px; }
+  
+    .label-message {
+      display: flex;
+      flex-direction: column; }
+    
+    /* submit button background color */
+      input[type=submit] {
+        background-color: blue;
+        height: 40px;
+        color: white;
+        padding: 0 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+      }
+    
+    /* hover over the submit button */
+    input[type=submit]:hover {
+      background-color: blueviolet;
+    }
+
+
+/* FOOTER SECTION*/
+
+  .footer {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    background: #828282;
     color: black;
   }
-  
-  
-  .message h1 {
-    width:800px;
-    margin:0 auto;
-    margin: 47px 0;
-  }
-  
-  .outer {
-    margin-right: 20%;
+
+  .footer .container {
+    width: 74%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
   }
 
-  .contact-info {
-    margin-bottom: 15px;
-  }
-  
-  .inner {
-     display: flex;
-     justify-content: space-between;
-  }
-  
-  .label {
+  .footer-text {
+    margin-top: 7px;
     display: flex;
     flex-direction: column;
-    
-  }
-  
-  .message {
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  
-  .buttonSubmit {
-    display: flex;
+    justify-content: center;
     align-items: center;
-    
   }
-  
-  /* submit button background color */
-  input[type=submit] {
-    margin-left: 7%;
-    background-color: blue;
-    height: 40px;
-    color: white;
-    padding: 0 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-
-/* hover over the submit button */
-input[type=submit]:hover {
-	background-color: blueviolet;
-}
-
-
-.footer .container {
-	width: 74%;
-	border-radius: 5px;
-  background-color: #f2f2f2;
-}
-
-.footer-text {
-  margin-top: 7px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
 
 /* Phone */
 
 @media (max-width: 500px) {
 
- .content{
-   margin: 0;
-   width: 100%;
-
+  .content{
+    margin: 0;
+    width: 100%;
  }
 
-.logo {
-    display: none;
+  .logo {
+      display: none;
+  }
+
+  .menu .menu-list {
+    width: 100%;
+  }
+
+  .menu .menu-list a {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-container {	
+    padding: 0;
+  }
+
+  .about-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+    
+  .left-box {
+    order: 2;
+  }
+
+  .about-text {
+    padding: 0 4%;
+  }
+
+  .tech-stack {
+    width: 74%;
+    margin: auto;  
+  }
+
+  .tech-icons{
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } 
+
+  .card { 
+    width: 74%;
+  }
+
+  #project-section {
+    margin-bottom: 0;
+  }
+
+  #blog-section {
+    width: 100%;
+    display: flex;
+  }
+
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog-content {
+    padding: 0;
+  }
+
+  #contact-section {
+    width: 100%;
+  }
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 2%;
+  }
+
 }
 
-
-.menu .menu-list {
-  width: 100%;
-}
-
-
-.menu .menu-list a {
-  display: flex;
-  justify-content: center;
-
- 
-}
-
-
-.about-container {	
-	padding: 0;
-}
-
-.about-grid {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-  
-.left-box {
-  order: 2;
-}
-
-.about-text {
-  padding: 0 4%;
-}
-
-.tech-stack {
-  width: 74%;
-  margin: auto;  
-}
-
-.tech-icons{
-  margin: auto;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-
-.project {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  
-} 
-
-.card { 
-  width: 74%;
-}
-
-
-#project-section {
-	margin-bottom: 0;
-}
-
-
-#blog-section {
-  width: 100%;
-  display: flex;
-}
-
-.grid-container {
-  display: flex;
-  flex-direction: column;
-}
-
-.blog-content {
-  padding: 0;
-}
-
-
-
-.footer {
-  display: flex;
-  flex-direction: column;
-  padding-left: 2%;
-}
-
-.contact-infoh3 {
-  display: flex;
-}
-
- .form {
-   display: flex;
-   flex-direction: column;
-   align-items: flex-start;
-   padding-left: 2%;
- }
-}
 
