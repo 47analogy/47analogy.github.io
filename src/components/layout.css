@@ -648,6 +648,7 @@ pre tt:after {
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    border: 1px solid black;
 }
 
 .menu {
@@ -694,14 +695,15 @@ nav {
 
 /* ABOUT  SECTION */
 
+
 #about-section {
-margin-top: 100px;
+margin-top: 30px;
 }
 
 .about-container {	
 	display: flex;
 	justify-content: center;
-	padding-top: 80px; padding-bottom: 80px;
+  padding-top: 80px; padding-bottom: 80px;
 }
 
 .about-grid {
@@ -788,30 +790,30 @@ h1 {
 
 /* BLOG SECTION */
 
-.grid-container {
-  max-width: 900px;
-  margin: 74px auto;
-  display: grid;
-  grid-template-columns: 100px 1fr 100px;
-  grid-template-rows: auto auto 1fr auto auto;
-}
 
 .blog-title h3 {
 	letter-spacing: 1px;
 	line-height: 30px;
 }
 
+.blog-content {
+  padding: 7px 7%;
+}
+
+
+
 .new-blog {
   margin-bottom: 15px;
+  border: 5px ridge rgb(238, 234, 234);
+  padding: 2%;
+ 
 }
 
 .blog-header {
   margin-bottom: 10px;
 }
 
-.blog-content {
-  padding: 25px 7%;
-}
+
 
 .blog-container {
   padding: 0 4%;
@@ -828,6 +830,12 @@ h1 {
 
 /* CONTACT SECTION */
 
+#contact-section {
+  display: flex;
+  justify-content: center;
+	margin: 74px 0;
+}
+
   .contact {
       display: flex;
       flex-direction: column;
@@ -835,7 +843,8 @@ h1 {
     }
   
     .contact h3 {
-    font-size: 30px;
+    	letter-spacing: 1px;
+	    line-height: 30px;
   }
 
     .contact-form {
@@ -998,17 +1007,24 @@ h1 {
 
   #blog-section {
     width: 100%;
-    display: flex;
-  }
-
-  .grid-container {
+    margin: 35px 0;
     display: flex;
     flex-direction: column;
   }
 
-  .blog-content {
+.blog-title {
+  display: flex;
+  justify-content: center;
+}
+
+  /* .grid-container {
+    display: flex;
+    flex-direction: column;
+  } */
+
+  /* .blog-content {
     padding: 0;
-  }
+  } */
 
   #contact-section {
     width: 100%;

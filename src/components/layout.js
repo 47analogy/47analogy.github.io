@@ -27,8 +27,8 @@ const Layout = ({ children }) => (
           <nav>
             <Link to="/">Home</Link>
             <Link to="#about-section">About</Link>
-            <Link to="#blog-section">Blog</Link>
             <Link to="#project-section">Projects</Link>
+            <Link to="#blog-section">Blog</Link>
             <Link to="#contact-section">Contact</Link>
           </nav>
         </div>

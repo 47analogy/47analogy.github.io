@@ -20,7 +20,14 @@ const IndexPage = () => (
   <Layout>
     <div className="container">
       <div className="header">
+        {/* <div className="row">
+          <div className="col-md-8 col-md-offset-2 centered"> */}
+        <h1>Welcome to my site<br />Anthony Tweed <br />Software Engineer</h1>
+        <div className="mtb">
+        </div>
       </div>
+      {/* </div> */}
+      {/* </div> */}
 
       <div className="content">
         {/* start About*/}
@@ -91,11 +98,11 @@ const IndexPage = () => (
 
         {/* start blog posts */}
         <section id="blog-section">
-
+          <div className="blog-title">
+            <h3>BLOG</h3>
+          </div>
           <div className="grid-container">
-            <div className="blog-title">
-              <h3>BLOG</h3>
-            </div>
+
 
             <div className="blog-content">
 
@@ -121,15 +128,15 @@ const IndexPage = () => (
               <article className="new-blog">
                 <div>
                   <div className="blog-header">
-                    <div><Link to="/kiss/">Really need to get my blog game up</Link></div>
+                    <div><Link to="/kiss/">Get my blog game up</Link></div>
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
               </article>
               <p>
-                <button className="btn btn-conf-2 btn-green">
-                  <Link to="/page-2/">See All Posts</Link>
-                </button>
+                {/* <button className="btn btn-conf-2 btn-green">
+                  <Link to="/kiss/">See All Posts</Link>
+                </button> */}
               </p>
             </div>
 
@@ -140,7 +147,7 @@ const IndexPage = () => (
 
         {/* start contact */}
         <section className="contact" id="contact-section">
-          <h3>Let's Talk!</h3>
+          <h3>LET'S TALK!</h3>
           <form method="POST" action="//formspree.io/atweed47@yahoo.com" className="contact-form">
             <label className="name-label" htmlFor="name">Name:
                     <input type="text" name="name" placeholder="Your name..." className="contact-input" required="" />
@@ -161,7 +168,7 @@ const IndexPage = () => (
 
       </div>
     </div>
-  </Layout>
+  </Layout >
 )
 
 export default IndexPage
