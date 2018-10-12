@@ -116,7 +116,7 @@ const IndexPage = () => (
                 </div>
               </article>
 
-              <article className="new-blog">
+              {/* <article className="new-blog">
                 <div>
                   <div className="blog-header">
                     <div><Link to="#">Need to get my blog game up</Link></div>
@@ -132,12 +132,7 @@ const IndexPage = () => (
                   </div>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
                 </div>
-              </article>
-              <p>
-                {/* <button className="btn btn-conf-2 btn-green">
-                  <Link to="/kiss/">See All Posts</Link>
-                </button> */}
-              </p>
+              </article> */}
             </div>
 
 
@@ -146,23 +141,27 @@ const IndexPage = () => (
         {/* end blog posts */}
 
         {/* start contact */}
-        <section className="contact" id="contact-section">
-          <h3>LET'S TALK!</h3>
-          <form method="POST" action="//formspree.io/atweed47@yahoo.com" className="contact-form">
-            <label className="name-label" htmlFor="name">Name:
+        <section id="contact-section">
+          <div className="contact-title">
+            <h3>LET'S TALK!</h3>
+          </div>
+          <div className="contact">
+            <form method="POST" action="//formspree.io/atweed47@yahoo.com" className="contact-form">
+              <label className="name-label" htmlFor="name">Name:
                     <input type="text" name="name" placeholder="Your name..." className="contact-input" required="" />
-            </label>
-            <label className="email-label" htmlFor="_replyto">Email:
+              </label>
+              <label className="email-label" htmlFor="_replyto">Email:
                     <input type="email" name="_replyto" placeholder="Your email..." className="contact-input" required="" />
-            </label>
-            <label className="label-message" htmlFor="message">Message:
+              </label>
+              <label className="label-message" htmlFor="message">Message:
                 <textarea name="message" placeholder="Your message..." className="contact-message" required=""></textarea>
-            </label>
-            <div className="buttonSubmit">
-              <input type="submit" value="Send" />
-              <input type="hidden" name="_subject" value="Message via http://anthonytweed.com" />
-            </div>
-          </form>
+              </label>
+              <div className="buttonSubmit">
+                <input type="submit" value="Send" />
+                <input type="hidden" name="_subject" value="Message via http://anthonytweed.com" />
+              </div>
+            </form>
+          </div>
         </section>
         {/* end contact */}
 
