@@ -20,23 +20,20 @@ const IndexPage = () => (
   <Layout>
     <div className="container">
       <div className="header">
-        {/* <div className="row">
-          <div className="col-md-8 col-md-offset-2 centered"> */}
-        <h1>Welcome to my site<br />Anthony Tweed <br />Software Engineer</h1>
+        <h1>Welcome to my site!<br />Anthony Tweed <br />Software Engineer</h1>
         <div className="mtb">
         </div>
       </div>
-      {/* </div> */}
-      {/* </div> */}
-
       <div className="content">
-        {/* start About*/}
 
+        {/* start About*/}
         <section id="about-section">
+          <div className="about-title">
+            <h1>About</h1>
+          </div>
           <div className="about-container">
             <div className="about-grid">
               <div className="left-box">
-                <div className="about-me"></div>
                 <p className="about-text">Hey, I'm Anthony Tweed, a software engineer in Atlanta. I'm a thinker and a problem solver.</p>
                 <p className="about-text">I see the computer as my lab where I run experiments and find solutions.</p>
                 <p className="about-text">When I'm not coding, I enjoy spending time outdoors in nature...the activity doesn't matter, as long as it varies.</p>
@@ -64,49 +61,49 @@ const IndexPage = () => (
         </section>
         {/* end About */}
 
-
-
         {/* project start */}
-
         <section id="project-section">
+          <div className="project-title">
+            <h1>Projects</h1>
+          </div>
           <div className="project">
             <div className="card">
               <img id="pj-img1" src={hairSprayImg} alt='hair spray' />
-              <h1>Hairspray</h1>
-              <p>Hair salon app that allows a user to schedule/provide feedback on services.</p>
+              <h2>Hairspray</h2>
+              <p>Hair salon app that allows a user to schedule and provide feedback on services.</p>
               <p>Team project built with React, Redux,  MongoDB, Node, Twilio and Stripe</p>
-              <p><a href="https://obscure-island-58835.herokuapp.com/">HairSpray</a></p>
+              <div className="pjt-btn">
+                <button className="btn"><a href="https://obscure-island-58835.herokuapp.com/">HairSpray</a></button>
+              </div>
             </div>
             <div className="card">
               <img id="pj-img1" src={bookVoteImg} alt='book vote' />
-              <h1>Book Vote</h1>
+              <h2>Book Vote</h2>
               <p>Book voting app that allows a user to search for and review books.</p>
               <p>Hackathon project built using React, Express, MongoDB, and Node</p>
-              <p><a href="https://github.com/hackathon-dudes/bookVote">Book Vote</a></p>
+              <div className="pjt-btn">
+                <button className="btn"><a href="https://github.com/hackathon-dudes/bookVote">Book Vote</a></button>
+              </div>
             </div>
             <div className="card">
               <img id="pj-img1" src={ruffImg} alt='img' />
-              <h1>Bundys Shoes</h1>
+              <h2>Bundys Shoes</h2>
               <p>CRUD app that allows a user to select, view and rate stylish shoes.</p>
               <p>Solo project built using React, Redux, Feathers, MongoDB, and Reactstrap</p>
-              <p><a href="https://github.com/47analogy/Bundys-Shoes">Coming Soon</a></p>
+              <div className="pjt-btn">
+                <button className="btn"><a href="https://github.com/47analogy/Bundys-Shoes">Coming Soon</a></button>
+              </div>
             </div>
-
           </div>
         </section>
-
 
         {/* start blog posts */}
         <section id="blog-section">
           <div className="blog-title">
-            <h3>BLOG</h3>
+            <h1>Blog</h1>
           </div>
           <div className="grid-container">
-
-
             <div className="blog-content">
-
-
               <article className="new-blog">
                 <div>
                   <div className="blog-header">
@@ -115,7 +112,6 @@ const IndexPage = () => (
                   <p>As I continue my journey in software development...</p>
                 </div>
               </article>
-
               {/* <article className="new-blog">
                 <div>
                   <div className="blog-header">
@@ -134,8 +130,6 @@ const IndexPage = () => (
                 </div>
               </article> */}
             </div>
-
-
           </div>
         </section>
         {/* end blog posts */}
@@ -143,7 +137,7 @@ const IndexPage = () => (
         {/* start contact */}
         <section id="contact-section">
           <div className="contact-title">
-            <h3>LET'S TALK!</h3>
+            <h1>Let's Talk!</h1>
           </div>
           <div className="contact">
             <form method="POST" action="//formspree.io/atweed47@yahoo.com" className="contact-form">

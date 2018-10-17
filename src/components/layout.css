@@ -623,8 +623,8 @@ pre tt:after {
 
 
 .content {
-  margin: auto;
-  width: 85%;
+  margin: auto 0;
+  width: 100%;
 }
   
 
@@ -635,7 +635,7 @@ pre tt:after {
 	text-align: center;
 	background-attachment: relative;
 	background-position: center center;
-	min-height: 474px;
+  height: 650px;
 	width: 100%;
 	color: white;
 
@@ -660,7 +660,8 @@ pre tt:after {
 }
 
 .header h1 {
-  margin-top: 147px;
+  margin-top: 214px;
+  margin-left: 24px;
 	font-weight: 700;
 	color: #663399;
 	font-size: 40px;
@@ -697,7 +698,14 @@ nav {
 
 
 #about-section {
-margin-top: 30px;
+margin-top: 100px;
+}
+
+.about-title h1 {
+  letter-spacing: 1px;
+      line-height: 30px;
+      display: flex;
+      justify-content: center;
 }
 
 .about-container {	
@@ -735,7 +743,7 @@ margin-top: 30px;
   margin-left: 3%;
 }
 
-.image{
+.image {
   display: flex;
   align-items: flex-start;
   margin-left: 2%;
@@ -748,23 +756,28 @@ margin-top: 30px;
 /* PROJECT SECTION */
 
 #project-section {
-  display: flex;
-  justify-content: center;
-	margin-bottom: 74px;
+  margin-bottom: 74px;
+  padding: 47px 0;
+  background-color: #d1d1d2;
 }
 
+.project-title h1 {
+	letter-spacing: 1px;
+      line-height: 30px;
+      display: flex;
+      align-items: column;
+      justify-content: center;
+}
 .project {
   font-family: calibri;
-  box-sizing: border-box;
   display: flex;
+  justify-content: center;
 }
 
-.project {
-  display: flex;
-  justify-content: space-between;
-}
+
 
 .card {
+max-width: 400px;
 flex: 1;
 border: 1px solid gray;
 box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(141, 59, 59, 0.12);
@@ -782,18 +795,43 @@ margin-right: 2%;
 	box-shadow: 1px 1px 3px #888;
 }
 
-h1 {
-  font-weight: lighter;
+h2 {
+  padding-top: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+ .pjt-btn {
+  display: flex;
+  justify-content: center;
   
+}
+
+.btn {
+  border-color: blue;
+  border-radius: 7%;
+  box-shadow: 2px 3px  #888888;
+}
+
+.btn a {
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #b1b0b0;
 }
 
 
 /* BLOG SECTION */
+#blog-section {
+  padding: 47px 0;
+}
 
-
-.blog-title h3 {
-	letter-spacing: 1px;
-	line-height: 30px;
+.blog-title h1 {
+  letter-spacing: 1px;
+  line-height: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .blog-content {
@@ -827,7 +865,10 @@ h1 {
 /* CONTACT SECTION */
 
 #contact-section {
-	margin: 74px 0;
+  margin-top: 74px; 
+  padding: 47px 0;
+  background-color: #d1d1d2;
+ 
 }
 
   .contact {
@@ -836,9 +877,11 @@ h1 {
       align-items: center; 
     }
   
-    .contact h3 {
+    .contact-title h1 {
     	letter-spacing: 1px;
-	    line-height: 30px;
+      line-height: 30px;
+      display: flex;
+      justify-content: center;
   }
 
     .contact-form {
@@ -894,7 +937,7 @@ h1 {
     
     /* submit button background color */
       input[type=submit] {
-        background-color: blue;
+        background-color: dodgerblue;
         height: 40px;
         color: white;
         padding: 0 20px;
@@ -905,7 +948,7 @@ h1 {
     
     /* hover over the submit button */
     input[type=submit]:hover {
-      background-color: blueviolet;
+      background-color: #663399;
     }
 
 
@@ -933,8 +976,17 @@ h1 {
     align-items: center;
   }
 
-/* Phone */
 
+
+@media (max-width: 780px) {
+  .container {
+    margin: auto;
+    width: 100%;
+  }
+}
+
+
+/* Phone */
 @media (max-width: 500px) {
 
   .content{
@@ -1013,6 +1065,11 @@ h1 {
 
   #contact-section {
     width: 100%;
+  }
+
+  .contact-title {
+    display: flex;
+    justify-content: center;
   }
 
   .footer {
