@@ -112,23 +112,6 @@ const IndexPage = () => (
                   <p>As I continue my journey in software development...</p>
                 </div>
               </article>
-              {/* <article className="new-blog">
-                <div>
-                  <div className="blog-header">
-                    <div><Link to="#">Need to get my blog game up</Link></div>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-              </article>
-
-              <article className="new-blog">
-                <div>
-                  <div className="blog-header">
-                    <div><Link to="/kiss/">Get my blog game up</Link></div>
-                  </div>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-              </article> */}
             </div>
           </div>
         </section>
