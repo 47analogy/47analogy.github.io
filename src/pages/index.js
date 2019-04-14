@@ -165,21 +165,23 @@ const IndexPage = () => (
 
         {/* Portfolio */}
         <section id="portfolio" className="two">
-          <div className="container">
+          <div class="container">
             <header>
               <h2>Portfolio</h2>
             </header>
-            <div className="row">
-              <div className="col-4 col-6-medium col-12-small">
-                <article className="box style2">
-                  <a href="#" className="image featured">
+            <div class="row">
+              <div class="col-4 col-12-mobile">
+                <article className="item">
+                  <a href="#" className="image fit">
                     <img
                       className="project-img"
                       src={hairSprayImg}
                       alt="hair spray"
                     />
                   </a>
-                  <h3>Hairspray</h3>
+                  <header>
+                    <h3>Hair Spray</h3>
+                  </header>
                   <p>
                     Hair salon app that allows a user to schedule / provide
                     feedback on services.
@@ -191,22 +193,24 @@ const IndexPage = () => (
                   <div className="pjt-btn">
                     <button className="btn">
                       <a href="https://obscure-island-58835.herokuapp.com/">
-                        HairSpray
+                        Hair Spray
                       </a>
                     </button>
                   </div>
                 </article>
               </div>
-              <div className="col-4 col-6-medium col-12-small">
-                <article className="box style2">
-                  <a href="#" className="image featured">
+              <div class="col-4 col-12-mobile">
+                <article className="item">
+                  <a href="#" className="image fit">
                     <img
                       className="project-img"
                       src={starting5img}
                       alt="starting-5"
                     />
                   </a>
-                  <h3>Starting 5</h3>
+                  <header>
+                    <h3>Starting 5</h3>
+                  </header>
                   <p>
                     Basketball app that allows a user to search season stats for
                     a player.
@@ -222,16 +226,18 @@ const IndexPage = () => (
                   </div>
                 </article>
               </div>
-              <div className="col-4 col-6-medium col-12-small">
-                <article className="box style2">
-                  <a href="#" className="image featured">
+              <div class="col-4 col-12-mobile">
+                <article className="item">
+                  <a href="#" className="image fit">
                     <img
                       className="project-img"
                       src={bundyShoesImg}
                       alt="bundy shoes"
                     />
                   </a>
-                  <h3>Bundys Shoes</h3>
+                  <header>
+                    <h3>Bundys Shoes</h3>
+                  </header>
                   <p>
                     CRUD app that allows a user to select, view and rate stylish
                     shoes.
@@ -254,23 +260,37 @@ const IndexPage = () => (
         </section>
 
         {/* Blog */}
-        {/* <section id="blog" className="one dark cover">
+
+        <section id="blog" className="one dark cover">
           <div className="container">
             <header>
               <h2>Blog</h2>
             </header>
-          </div>
-          <article className="new-blog">
-            <div>
-              <div className="blog-header">
-                <div>
-                  <Link to="/kiss/">Implementing KISS</Link>
-                </div>
+            <div class="row">
+              <div class="col-4 col-12-mobile">
+                <article class="item">
+                  <a href="#" class="image fit">
+                    <img src="images/pic02.jpg" alt="" />
+                  </a>
+
+                  <div>
+                    <div className="blog-header">
+                      <div>
+                        <Link to="/kiss/">
+                          Implementing KISS <br />
+                          <p>
+                            As I continue my journey in software development...
+                          </p>
+                        </Link>
+                      </div>
+                    </div>
+                    {/* <p>As I continue my journey in software development...</p> */}
+                  </div>
+                </article>
               </div>
-              <p>As I continue my journey in software development...</p>
             </div>
-          </article>
-        </section> */}
+          </div>
+        </section>
 
         {/*  Contact*/}
         <section id="contact" className="four">
