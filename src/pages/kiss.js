@@ -4,7 +4,7 @@ import '../components/layout.css'
 import Layout from '../components/layout'
 
 const divStyle = {
-  margin: '40px',
+  margin: '30px',
 }
 
 const SecondPage = () => (

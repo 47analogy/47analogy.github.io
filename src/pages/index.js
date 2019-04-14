@@ -165,12 +165,12 @@ const IndexPage = () => (
 
         {/* Portfolio */}
         <section id="portfolio" className="two">
-          <div class="container">
+          <div className="container">
             <header>
               <h2>Portfolio</h2>
             </header>
-            <div class="row">
-              <div class="col-4 col-12-mobile">
+            <div className="row">
+              <div className="col-4 col-12-mobile">
                 <article className="item">
                   <a href="#" className="image fit">
                     <img
@@ -199,7 +199,7 @@ const IndexPage = () => (
                   </div>
                 </article>
               </div>
-              <div class="col-4 col-12-mobile">
+              <div className="col-4 col-12-mobile">
                 <article className="item">
                   <a href="#" className="image fit">
                     <img
@@ -226,7 +226,7 @@ const IndexPage = () => (
                   </div>
                 </article>
               </div>
-              <div class="col-4 col-12-mobile">
+              <div className="col-4 col-12-mobile">
                 <article className="item">
                   <a href="#" className="image fit">
                     <img
@@ -260,19 +260,17 @@ const IndexPage = () => (
         </section>
 
         {/* Blog */}
-
         <section id="blog" className="one dark cover">
           <div className="container">
             <header>
               <h2>Blog</h2>
             </header>
-            <div class="row">
-              <div class="col-4 col-12-mobile">
+            <div className="row">
+              <div className="col-4 col-12-mobile">
                 <article class="item">
-                  <a href="#" class="image fit">
+                  <a href="#" className="image fit">
                     <img src="images/pic02.jpg" alt="" />
                   </a>
-
                   <div>
                     <div className="blog-header">
                       <div>
@@ -326,7 +324,6 @@ const IndexPage = () => (
 
       {/*  Footer  */}
       <div id="footer">
-        {/* Copyright  */}
         <ul className="copyright">
           <li>&copy; 2019 - CODETHINKER</li>
         </ul>
