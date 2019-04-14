@@ -1,151 +1,318 @@
 import React from 'react'
-import { Link } from 'gatsby'
 import Layout from '../components/layout'
+import { Link } from 'gatsby'
 import myImg from '../assets/act.png'
-import jsImg from '../assets/js-icon.svg'
-import htmlImg from '../assets/html5-icon.svg'
-import reactImg from '../assets/react-icon.svg'
-import cssImg from '../assets/css-icon.svg'
-import nodeImg from '../assets/node-icon.svg'
-import mongoImg from '../assets/mongo-icon.svg'
-import pythonImg from '../assets/python-icon.png'
-import sqlImg from '../assets/sql-icon.png'
-import expressImg from '../assets/express-icon.png'
+import head from '../assets/header2.png'
 import hairSprayImg from '../assets/hairspray.png'
-import bookVoteImg from '../assets/book-vote.png'
-import ruffImg from '../assets/ruff.png'
+import starting5img from '../assets/starting5.png'
+import bundyShoesImg from '../assets/shoes.png'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import {
+  faHome,
+  faUser,
+  faBriefcase,
+  faPen,
+  faEnvelope,
+} from '@fortawesome/free-solid-svg-icons'
 
+import {
+  faLinkedin,
+  faGithub,
+  faTwitter,
+} from '@fortawesome/free-brands-svg-icons'
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
+library.add(
+  faHome,
+  faUser,
+  faBriefcase,
+  faPen,
+  faEnvelope,
+  faLinkedin,
+  faGithub,
+  faTwitter
+)
 
 const IndexPage = () => (
   <Layout>
-    <div className="container">
-      <div className="header">
-        <h1>Welcome to my site!<br />Anthony Tweed <br />Software Engineer</h1>
-        <div className="mtb">
+    <div>
+      {/*  Header  */}
+      <div id="header">
+        <div className="top">
+          {/*  Logo */}
+          <div id="logo">
+            <span className="image avatar48">
+              <img src={myImg} alt="anthony-tweed" />
+            </span>
+            <h1 id="title">Anthony Tweed</h1>
+            <p>Software Engineer</p>
+          </div>
+
+          {/*  Nav  */}
+          <nav id="nav">
+            <ul>
+              <li>
+                <a href="#top" id="top-link">
+                  <span className="icon fa-home">
+                    Intro &#160; <FontAwesomeIcon icon="home" />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#about" id="about-link">
+                  <span className="icon fa-user">
+                    About Me &#160;
+                    <FontAwesomeIcon icon="user" />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#portfolio" id="portfolio-link">
+                  <span className="icon fa-briefcase">
+                    Portfolio &#160;
+                    <FontAwesomeIcon icon="briefcase" />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#blog" id="blog-link">
+                  <span className="icon fa-pencil">
+                    Blog &#160;
+                    <FontAwesomeIcon icon="pen" />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href="#contact" id="contact-link">
+                  <span className="icon fa-envelope">
+                    Contact &#160;
+                    <FontAwesomeIcon icon="envelope" />
+                  </span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div className="bottom">
+          {/*  Social Icons  */}
+          <ul className="icons">
+            <li>
+              <a href="https://linkedin.com/in/anthony-tweed">
+                <FontAwesomeIcon icon={['fab', 'linkedin']} />
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/47analogy">
+                <FontAwesomeIcon icon={['fab', 'github']} />
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/atweed47?lang=en">
+                <FontAwesomeIcon icon={['fab', 'twitter']} />
+              </a>
+            </li>
+            <li>
+              <a href="mailto:actweed47@gmail.com" className="icon fa-envelope">
+                <FontAwesomeIcon icon="envelope" />
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
-      <div className="content">
 
-        {/* start About*/}
-        <section id="about-section">
-          <div className="about-title">
-            <h1>About</h1>
+      {/*  Main  */}
+      <div id="main">
+        {/*  Intro  */}
+        <section id="top" className="one dark cover">
+          <div className="container">
+            <header>
+              <h2 className="alt">
+                Hey! I'm <strong>Anthony Tweed,</strong>
+                <br />a software engineer in Atlanta.
+                <br />
+                I'm a thinker and a problem solver.{' '}
+              </h2>
+            </header>
           </div>
-          <div className="about-container">
-            <div className="about-grid">
-              <div className="left-box">
-                <p className="about-text">Hey, I'm Anthony Tweed, a software engineer in Atlanta. I'm a thinker and a problem solver.</p>
-                <p className="about-text">I see the computer as my lab where I run experiments and find solutions.</p>
-                <p className="about-text">When I'm not coding, I enjoy spending time outdoors in nature...the activity doesn't matter, as long as it varies.</p>
-                <p className="about-text">My goal in the software game to create products and content that help consumers get what they need, when they want it, and make their lives more enjoyable in the process. </p>
-                <p className="about-text">I have experience with all stages of the fullstack software development process, including frameworks, servers, databases, testing, and deployment. I am a software engineer for all your needs.</p>
-                <div className="tech-stack">
-                  <div className="tech-icons">
-                    <img className="tech-img" src={jsImg} height="50" alt="JavaScript" />
-                    <img className="tech-img" src={htmlImg} height="50" alt="HTML" />
-                    <img className="tech-img" src={cssImg} height="50" alt="CSS" />
-                    <img className="tech-img" src={reactImg} height="50" alt="React" />
-                    <img className="tech-img" src={pythonImg} height="50" alt="Python" />
-                    <img className="tech-img" src={nodeImg} height="50" alt="Node" />
-                    <img className="tech-img" src={expressImg} height="50" alt="Express" />
-                    <img className="tech-img" src={sqlImg} height="50" alt="SQL" />
-                    <img className="tech-img" src={mongoImg} height="50" alt="MongoDB" />
+        </section>
+
+        {/*About Me  */}
+        <section id="about" className="three">
+          <div className="container">
+            <header>
+              <h2>About Me</h2>
+            </header>
+
+            <a href="#" className="image featured">
+              <img src={head} alt="" />
+            </a>
+
+            <p>
+              I see the computer as my lab where I run experiments and find
+              solutions. When I'm not coding, I enjoy spending time outdoors in
+              nature...the activity doesn't matter, as long as it varies. My
+              goal in the software game to create products and content that help
+              consumers get what they need, when they want it, and make their
+              lives more enjoyable in the process. I have experience with all
+              stages of the fullstack software development process, including
+              frameworks, servers, databases, testing, and deployment. I am a
+              software engineer for all your needs.
+            </p>
+          </div>
+        </section>
+
+        {/* Portfolio */}
+        <section id="portfolio" className="two">
+          <div className="container">
+            <header>
+              <h2>Portfolio</h2>
+            </header>
+            <div className="row">
+              <div className="col-4 col-6-medium col-12-small">
+                <article className="box style2">
+                  <a href="#" className="image featured">
+                    <img
+                      className="project-img"
+                      src={hairSprayImg}
+                      alt="hair spray"
+                    />
+                  </a>
+                  <h3>Hairspray</h3>
+                  <p>
+                    Hair salon app that allows a user to schedule / provide
+                    feedback on services.
+                  </p>
+                  <p>
+                    Team project built with React, Redux, MongoDB, Node, Twilio,
+                    and Stripe
+                  </p>
+                  <div className="pjt-btn">
+                    <button className="btn">
+                      <a href="https://obscure-island-58835.herokuapp.com/">
+                        HairSpray
+                      </a>
+                    </button>
                   </div>
-                </div>
+                </article>
               </div>
-              <div className="image">
-                <img src={myImg} className="img-me" alt="ACT" /></div>
+              <div className="col-4 col-6-medium col-12-small">
+                <article className="box style2">
+                  <a href="#" className="image featured">
+                    <img
+                      className="project-img"
+                      src={starting5img}
+                      alt="starting-5"
+                    />
+                  </a>
+                  <h3>Starting 5</h3>
+                  <p>
+                    Basketball app that allows a user to search season stats for
+                    a player.
+                  </p>
+                  <p>
+                    Solo project built using React, 3rd party APIs, Sass, and
+                    Bootstrap
+                  </p>
+                  <div className="pjt-btn">
+                    <button className="btn">
+                      <a href="https://starting-5.netlify.com/">Starting 5</a>
+                    </button>
+                  </div>
+                </article>
+              </div>
+              <div className="col-4 col-6-medium col-12-small">
+                <article className="box style2">
+                  <a href="#" className="image featured">
+                    <img
+                      className="project-img"
+                      src={bundyShoesImg}
+                      alt="bundy shoes"
+                    />
+                  </a>
+                  <h3>Bundys Shoes</h3>
+                  <p>
+                    CRUD app that allows a user to select, view and rate stylish
+                    shoes.
+                  </p>
+                  <p>
+                    Solo project built using React, Redux, Feathers, MongoDB,
+                    and Reactstrap
+                  </p>
+                  <div className="pjt-btn">
+                    <button className="btn">
+                      <a href="https://github.com/47analogy/Bundys-Shoes">
+                        Coming Soon
+                      </a>
+                    </button>
+                  </div>
+                </article>
+              </div>
             </div>
           </div>
-
         </section>
-        {/* end About */}
 
-        {/* project start */}
-        <section id="project-section">
-          <div className="project-title">
-            <h1>Projects</h1>
+        {/* Blog */}
+        {/* <section id="blog" className="one dark cover">
+          <div className="container">
+            <header>
+              <h2>Blog</h2>
+            </header>
           </div>
-          <div className="project">
-            <div className="card">
-              <img id="pj-img1" src={hairSprayImg} alt='hair spray' />
-              <h2>Hairspray</h2>
-              <p>Hair salon app that allows a user to schedule and provide feedback on services.</p>
-              <p>Team project built with React, Redux,  MongoDB, Node, Twilio and Stripe</p>
-              <div className="pjt-btn">
-                <button className="btn"><a href="https://obscure-island-58835.herokuapp.com/">HairSpray</a></button>
-              </div>
-            </div>
-            <div className="card">
-              <img id="pj-img1" src={bookVoteImg} alt='book vote' />
-              <h2>Book Vote</h2>
-              <p>Book voting app that allows a user to search for and review books.</p>
-              <p>Hackathon project built using React, Express, MongoDB, and Node</p>
-              <div className="pjt-btn">
-                <button className="btn"><a href="https://github.com/hackathon-dudes/bookVote">Book Vote</a></button>
-              </div>
-            </div>
-            <div className="card">
-              <img id="pj-img1" src={ruffImg} alt='img' />
-              <h2>Bundys Shoes</h2>
-              <p>CRUD app that allows a user to select, view and rate stylish shoes.</p>
-              <p>Solo project built using React, Redux, Feathers, MongoDB, and Reactstrap</p>
-              <div className="pjt-btn">
-                <button className="btn"><a href="https://github.com/47analogy/Bundys-Shoes">Coming Soon</a></button>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* start blog posts */}
-        <section id="blog-section">
-          <div className="blog-title">
-            <h1>Blog</h1>
-          </div>
-          <div className="grid-container">
-            <div className="blog-content">
-              <article className="new-blog">
+          <article className="new-blog">
+            <div>
+              <div className="blog-header">
                 <div>
-                  <div className="blog-header">
-                    <div><Link to="/kiss/">Implementing KISS</Link></div>
-                  </div>
-                  <p>As I continue my journey in software development...</p>
+                  <Link to="/kiss/">Implementing KISS</Link>
                 </div>
-              </article>
+              </div>
+              <p>As I continue my journey in software development...</p>
             </div>
-          </div>
-        </section>
-        {/* end blog posts */}
+          </article>
+        </section> */}
 
-        {/* start contact */}
-        <section id="contact-section">
-          <div className="contact-title">
-            <h1>Let's Talk!</h1>
-          </div>
-          <div className="contact">
-            <form method="POST" action="//formspree.io/atweed47@yahoo.com" className="contact-form">
-              <label className="name-label" htmlFor="name">Name:
-                    <input type="text" name="name" placeholder="Your name..." className="contact-input" required="" />
-              </label>
-              <label className="email-label" htmlFor="_replyto">Email:
-                    <input type="email" name="_replyto" placeholder="Your email..." className="contact-input" required="" />
-              </label>
-              <label className="label-message" htmlFor="message">Message:
-                <textarea name="message" placeholder="Your message..." className="contact-message" required=""></textarea>
-              </label>
-              <div className="buttonSubmit">
-                <input type="submit" value="Send" />
-                <input type="hidden" name="_subject" value="Message via http://anthonytweed.com" />
+        {/*  Contact*/}
+        <section id="contact" className="four">
+          <div className="container">
+            <header>
+              <h2>Contact</h2>
+            </header>
+            <p>Let's Talk!</p>
+            <form method="post" action="//formspree.io/atweed47@yahoo.com">
+              <div className="row">
+                <div className="col-6 col-12-mobile">
+                  <input type="text" name="name" placeholder="Name" />
+                </div>
+                <div className="col-6 col-12-mobile">
+                  <input type="text" name="email" placeholder="Email" />
+                </div>
+                <div className="col-12">
+                  <textarea name="message" placeholder="Message" />
+                </div>
+                <div className="col-12">
+                  <input type="submit" value="Send Message" />
+                  <input
+                    type="hidden"
+                    name="_subject"
+                    value="Message via http://anthonytweed.com"
+                  />
+                </div>
               </div>
             </form>
           </div>
         </section>
-        {/* end contact */}
+      </div>
 
+      {/*  Footer  */}
+      <div id="footer">
+        {/* Copyright  */}
+        <ul className="copyright">
+          <li>&copy; 2019 - CODETHINKER</li>
+        </ul>
       </div>
     </div>
-  </Layout >
+  </Layout>
 )
 
 export default IndexPage
-
