@@ -2706,6 +2706,10 @@ button:active,
     padding: 0 15px 0 15px;
   }
 
+  .item header h3 {
+    font-size: 1.5em;
+  }
+
   /* List */
 
   ul.icons a {
