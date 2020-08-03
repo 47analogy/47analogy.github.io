@@ -4,8 +4,9 @@ import { Link } from 'gatsby'
 import myImg from '../assets/act.png'
 import head from '../assets/header2.png'
 import hairSprayImg from '../assets/hairspray.png'
+import reactD3MapImg from '../assets/react-d3.png'
 import starting5img from '../assets/starting5.png'
-import bundyShoesImg from '../assets/shoes.png'
+import shoeImg from '../assets/shoes.png'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faHome,
@@ -153,12 +154,12 @@ const IndexPage = () => (
               I see the computer as my lab where I run experiments and find
               solutions. When I'm not coding, I enjoy spending time outdoors in
               nature...the activity doesn't matter, as long as it varies. My
-              goal in the software game to create products and content that help
-              consumers get what they need, when they want it, and make their
-              lives more enjoyable in the process. I have experience with all
-              stages of the fullstack software development process, including
-              frameworks, servers, databases, testing, and deployment. I am a
-              software engineer for all your needs.
+              goal in the software game is to create products and content that
+              help consumers get what they need, when they want it, and make
+              their lives more enjoyable in the process. I have experience with
+              all stages of the fullstack software development process,
+              including frameworks, servers, databases, testing, and deployment.
+              I am a software engineer for all your needs.
             </p>
           </div>
         </section>
@@ -175,25 +176,25 @@ const IndexPage = () => (
                   <a href="#" className="image fit">
                     <img
                       className="project-img"
-                      src={hairSprayImg}
-                      alt="hair spray"
+                      src={reactD3MapImg}
+                      alt="react D3 map"
                     />
                   </a>
                   <header>
-                    <h3>Hair Spray</h3>
+                    <div />
+                    <h3>React D3 USA Map</h3>
                   </header>
                   <p>
-                    Hair salon app that allows a user to schedule / provide
-                    feedback on services.
+                    Interactive map simulator app of presidential electoral
+                    votes by state.
                   </p>
                   <p>
-                    Team project built with React, Redux, MongoDB, Node, Twilio,
-                    and Stripe
+                    Project built using React, Next, D3, and Geo Projections
                   </p>
                   <div className="pjt-btn">
                     <button className="btn">
-                      <a href="https://obscure-island-58835.herokuapp.com/">
-                        Hair Spray
+                      <a href="https://github.com/47analogy/react-d3-usa-map">
+                        React D3 USA Map
                       </a>
                     </button>
                   </div>
@@ -216,12 +217,14 @@ const IndexPage = () => (
                     a player.
                   </p>
                   <p>
-                    Solo project built using React, 3rd party APIs, Sass, and
+                    Project built using React, 3rd party APIs, Sass, and
                     Bootstrap
                   </p>
                   <div className="pjt-btn">
                     <button className="btn">
-                      <a href="https://starting-5.netlify.com/">Starting 5</a>
+                      <a href="https://github.com/47analogy/starting-5">
+                        Starting 5
+                      </a>
                     </button>
                   </div>
                 </article>
@@ -231,25 +234,25 @@ const IndexPage = () => (
                   <a href="#" className="image fit">
                     <img
                       className="project-img"
-                      src={bundyShoesImg}
-                      alt="bundy shoes"
+                      src={shoeImg}
+                      alt="shoe-view"
                     />
                   </a>
                   <header>
-                    <h3>Bundys Shoes</h3>
+                    <h3>Shoe View</h3>
                   </header>
                   <p>
                     CRUD app that allows a user to select, view and rate stylish
                     shoes.
                   </p>
                   <p>
-                    Solo project built using React, Redux, Feathers, MongoDB,
-                    and Reactstrap
+                    Project built using React, Node, MongoDB, and Semantic UI
+                    React
                   </p>
                   <div className="pjt-btn">
                     <button className="btn">
-                      <a href="https://github.com/47analogy/Bundys-Shoes">
-                        Coming Soon
+                      <a href="https://github.com/47analogy/Shoe-View">
+                        Shoe View
                       </a>
                     </button>
                   </div>
@@ -266,26 +269,27 @@ const IndexPage = () => (
               <h2>Blog</h2>
             </header>
             <div className="row">
-              <div className="col-4 col-12-mobile">
-                <article class="item">
-                  <a href="#" className="image fit">
-                    <img src="images/pic02.jpg" alt="" />
-                  </a>
-                  <div>
-                    <div className="blog-header">
-                      <div>
-                        <Link to="/kiss/">
-                          Implementing KISS <br />
-                          <p>
-                            As I continue my journey in software development...
-                          </p>
-                        </Link>
-                      </div>
+              {/* <div className="col-4 col-12-mobile"> */}
+              <article class="item">
+                <a href="#" className="image fit">
+                  <img src="images/pic02.jpg" alt="" />
+                </a>
+                <div>
+                  <div className="blog-header">
+                    <div className="blog-post">
+                      <Link className="blog-link" to="/kiss">
+                        Implementing KISS
+                      </Link>
                     </div>
-                    {/* <p>As I continue my journey in software development...</p> */}
+                    <div className="blog-post">
+                      <Link className="blog-link" to="/react-d3">
+                        React and D3 <br /> Friends or Foes?
+                      </Link>
+                    </div>
                   </div>
-                </article>
-              </div>
+                </div>
+              </article>
+              {/* </div> */}
             </div>
           </div>
         </section>
