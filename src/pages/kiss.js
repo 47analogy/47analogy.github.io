@@ -1,29 +1,33 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import '../components/layout.css'
+import '../components/blog-layout.css'
 import Layout from '../components/layout'
 
 const divStyle = {
   margin: '30px',
 }
 
-const SecondPage = () => (
+const KissBlog = () => (
   <Layout>
     <div style={divStyle}>
       <div className="blog-container">
-        <h1>Implementing KISS</h1>
-        <h3>Why KISS</h3>
+        <div className="home-link">
+          <Link className="home-link" to="/">
+            Go back to the landing page
+          </Link>
+        </div>
+        <div className="header">
+          <h2>Implementing Kiss</h2>
+        </div>
         <div className="blog-text">
+          <h5>July 14, 2018</h5>
           <p>
             As I continue my journey in software development, I frequently
             encounter a lot of principles, such as OOP, DRY, and SOLID. I
             totally embrace these principles because they provide a path towards
             the best practices and streamlines the overall development process.
             However, I’ve found that
-            <Link to="https://en.wikipedia.org/wiki/KISS_principle">
-              {' '}
-              KISS{' '}
-            </Link>
+            <a href="https://en.wikipedia.org/wiki/KISS_principle"> KISS </a>
             is the one that has assisted me the most. KISS is important to me
             because it helps to not complicate things. For example, when I’m
             starting a new project, I try to form a plan of action (usually by
@@ -114,4 +118,4 @@ const SecondPage = () => (
   </Layout>
 )
 
-export default SecondPage
+export default KissBlog

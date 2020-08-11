@@ -7,6 +7,7 @@ import hairSprayImg from '../assets/hairspray.png'
 import reactD3MapImg from '../assets/react-d3.png'
 import starting5img from '../assets/starting5.png'
 import shoeImg from '../assets/shoes.png'
+import resumePdf from '../assets/resume.pdf'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faHome,
@@ -14,6 +15,7 @@ import {
   faBriefcase,
   faPen,
   faEnvelope,
+  faFile,
 } from '@fortawesome/free-solid-svg-icons'
 
 import {
@@ -32,7 +34,8 @@ library.add(
   faEnvelope,
   faLinkedin,
   faGithub,
-  faTwitter
+  faTwitter,
+  faFile
 )
 
 const IndexPage = () => (
@@ -89,6 +92,14 @@ const IndexPage = () => (
                   <span className="icon fa-envelope">
                     Contact &#160;
                     <FontAwesomeIcon icon="envelope" />
+                  </span>
+                </a>
+              </li>
+              <li>
+                <a href={resumePdf} download="resume.pdf" id="resume">
+                  <span className="icon fa-file">
+                    Resume &#160;
+                    <FontAwesomeIcon icon="file" />
                   </span>
                 </a>
               </li>
@@ -329,7 +340,7 @@ const IndexPage = () => (
       {/*  Footer  */}
       <div id="footer">
         <ul className="copyright">
-          <li>&copy; 2019 - CODETHINKER</li>
+          <li>&copy; 2020 - A CODE THINKER</li>
         </ul>
       </div>
     </div>

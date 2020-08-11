@@ -335,6 +335,41 @@ br.clear {
   width: 1400px;
 }
 
+#blog.one.dark.cover {
+  padding-top: 40px;
+}
+
+#blog.one.dark.cover.container h2 {
+  color: #666666;
+  font: Arial;
+  font-size: 28px;
+}
+
+.blog-header {
+  display: flex;
+  flex-grow: 1;
+}
+
+.blog-post {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  margin-right: 50px;
+  border: 1px solid gray;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-top: 10px solid green;
+  padding: 10px;
+  margin: 10px;
+}
+
+.blog-link {
+  color: #ffffff;
+  text-decoration: underline;
+  margin: 10px 5px;
+}
+
 @media screen and (min-width: 961px) and (max-width: 1880px) {
   .container {
     width: 1200px;
