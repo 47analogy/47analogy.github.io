@@ -7,7 +7,7 @@ import hairSprayImg from '../assets/hairspray.png'
 import reactD3MapImg from '../assets/react-d3.png'
 import starting5img from '../assets/starting5.png'
 import shoeImg from '../assets/shoes.png'
-import resumePdf from '../assets/resume.pdf'
+import resumePdf from '../assets/atweed_resume.pdf'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import {
   faHome,
@@ -96,7 +96,7 @@ const IndexPage = () => (
                 </a>
               </li>
               <li>
-                <a href={resumePdf} download="resume.pdf" id="resume">
+                <a href={resumePdf} download="atweed_resume.pdf" id="resume">
                   <span className="icon fa-file">
                     Resume &#160;
                     <FontAwesomeIcon icon="file" />
